@@ -1,0 +1,72 @@
+.navigation-wrapper ul {
+  margin-top: 240px;
+  margin-left: 100px;
+  margin-bottom: 200px;
+  list-style: none;
+  position: absolute;
+}
+
+.navigation-item {
+  display: block;
+  user-select: none;
+  margin: 200px 0;
+  overflow: hidden;
+}
+
+a {
+  font-family: $nunito-black;
+  font-size: 8vw;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-weight: 900;
+
+  &:hover {
+       color: rgba(255, 255, 255, 0.3);
+  }
+  
+}
+
+span {
+  position: relative;
+  display: block;
+}
+
+.navigation-item span:before {
+  width: 0;
+  // color: pink;
+
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  // background: -webkit-linear-gradient(180deg, #845ec2, #d65db1, #ff6f91, #ff9671);;
+  background: -webkit-linear-gradient(180deg, pink, #fc88a3);
+  // background: -webkit-linear-gradient(180deg, pink, #f9e7ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navigation-item span:hover:before {
+  width: 100%;
+}
+
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.project-preview {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  width: 0px;
+  height: 400px;
+  background: url('../images/madeleineenberg02.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  transform: rotate(-12deg);
+}
