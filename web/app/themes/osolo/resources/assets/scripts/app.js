@@ -5,9 +5,10 @@ import 'jquery';
 import 'bootstrap';
 import customCursor from './custom/customCursor';
 import hoverEffekt from './custom/hoverEffekt';
+import gallery from './custom/gallery';
 
 $(() => {
-  
   customCursor();
   hoverEffekt();
+  gallery();
 });

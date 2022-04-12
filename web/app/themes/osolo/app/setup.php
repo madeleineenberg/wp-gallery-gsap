@@ -147,3 +147,14 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer'
     ] + $config);
 });
+
+/**
+ * /wp-json/portfolio/endpoints
+ * */
+add_action('rest_api_init', function () {
+    register_rest_route('portfolio', '/gallery', [
+        'methods' => 'GET',
+        'callback' => require('Routes/Gallery.php'),
+    ]);
+    
+});

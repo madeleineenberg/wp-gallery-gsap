@@ -19,7 +19,7 @@ class HoverLink extends Composer
     public function with()
     {
         return [
-           'links' => get_field('links')
+           'galleries' => get_field('galleries'),
         ];
     }
 

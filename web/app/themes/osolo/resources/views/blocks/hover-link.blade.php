@@ -18,11 +18,12 @@
         <div class="project-preview"></div>
     </div>
     <ul class="navigation-list">
-        @foreach ($links as $key => $item)
+        @foreach ($galleries as $key => $gallery)
             <li class="navigation-item">
-                <a href="{{ $item['link']['url'] }}" class="navigation-link navigartion-link-{{ $key }}"
-                    data-image="{{ $item['image']['sizes']['large'] }}">
-                    <span data-text="{{ $item['link']['title'] }}">{{ $item['link']['title'] }}</span>
+                <a href="{{ get_permalink($gallery->ID) }}" class="navigation-link navigation-link-{{ $key }}"
+                    data-image="{{ get_the_post_thumbnail_url($gallery->ID) }}">
+                    <span data-text="{{ $gallery->post_title }}"
+                        data-id="{{ $gallery->ID }}">{{ $gallery->post_title }}</span>
                 </a>
             </li>
         @endforeach
