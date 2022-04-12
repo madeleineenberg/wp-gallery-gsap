@@ -31,3 +31,12 @@ add_filter('site_transient_update_plugins', function ($value) {
     unset($value->response['filebird/filebird.php']);
     return $value;
 });
+
+/**
+ * Removes gutenberg for cpt
+ */
+
+add_filter('use_block_editor_for_post_type', function ($current_status, $post_type) {
+    if ($post_type === 'galleri') return false;
+    return $current_status;
+}, 10, 2);
