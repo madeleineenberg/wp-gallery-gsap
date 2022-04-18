@@ -14,15 +14,15 @@
 }
 
 a {
-  font-family: $nunito-black;
+  font-family: $oswald-bold;
   font-size: 8vw;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
-  font-weight: 900;
+  letter-spacing: 2px;
 
   &:hover {
-       color: rgba(255, 255, 255, 0.3);
+       color: rgba(255, 255, 255, 0.2);
   }
   
 }
