@@ -52,6 +52,7 @@
     "bootstrap": "^5.0.0-beta2",
     "custom-cursor": "^2.1.0",
     "gsap": "^3.10.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "split-type": "^0.2.5"
   }
 }
