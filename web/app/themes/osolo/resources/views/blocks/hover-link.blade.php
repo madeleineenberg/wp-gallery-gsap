@@ -22,9 +22,10 @@
             <li class="navigation-item">
                 <a href="{{ get_permalink($gallery->ID) }}" class="navigation-link navigation-link-{{ $key }}"
                     data-image="{{ get_the_post_thumbnail_url($gallery->ID) }}">
-                    <span data-text="{{ $gallery->post_title }}"
+                    <span class="navigation-title" data-text="{{ $gallery->post_title }}"
                         data-id="{{ $gallery->ID }}">{{ $gallery->post_title }}</span>
                 </a>
+                <img src="{{ get_the_post_thumbnail_url($gallery->ID) }}" alt="">
             </li>
         @endforeach
     </ul>

@@ -1,22 +1,18 @@
 .gallery-container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 
+  .image {
+    position: absolute;
+    z-index: 60;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  }
 
-    .image {
-        position: absolute;
-        z-index: 10;
-       box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-              0 2px 2px rgba(0,0,0,0.11), 
-              0 4px 4px rgba(0,0,0,0.11), 
-              0 8px 8px rgba(0,0,0,0.11), 
-              0 16px 16px rgba(0,0,0,0.11), 
-              0 32px 32px rgba(0,0,0,0.11);
-    }
-
-    .gallery-title {
+  .gallery-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,8 +24,8 @@
     font-family: $oswald-bold;
     overflow: hidden;
 
-   .split-child {
-        display: inline-block;
-      }
+    .split-child {
+      display: inline-block;
     }
+  }
 }
