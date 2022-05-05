@@ -158,3 +158,11 @@ add_action('rest_api_init', function () {
     ]);
     
 });
+
+/**
+ * loding custom cursor script
+ */
+
+add_action('init', function(){
+wp_register_script ( 'custom_cursor', plugins_url ( '../resources/assets/scripts/custom/customCursor.js', __FILE__ ) );
+});
