@@ -8,6 +8,7 @@ import hoverEffekt from './custom/hoverEffekt';
 import gallery from './custom/gallery';
 import animateText from './custom/animateText';
 import header from './custom/header';
+import locomotiveScroll from './custom/locomotiveScroll';
 
 $(() => {
   customCursor();
@@ -15,4 +16,5 @@ $(() => {
   gallery();
   animateText();
   header();
+  locomotiveScroll();
 });

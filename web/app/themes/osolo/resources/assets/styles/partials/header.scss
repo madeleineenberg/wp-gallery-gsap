@@ -92,15 +92,16 @@ header.banner {
       }
 
       &-number {
-        font-style: italic;
         padding: 0px 20px;
         font-size: 25px;
+        font-family: $lekton-italic;
 
         @include media-breakpoint-up(lg) {
           width: 15%;
         }
       }
       &-name {
+        letter-spacing: 3px;
         @include media-breakpoint-up(lg) {
           width: 25%;
         }
@@ -110,6 +111,7 @@ header.banner {
         width: 35%;
         font-size: 15px;
         padding: 25px 0px;
+        font-family: $lekton-italic;
 
         @include media-breakpoint-down(lg) {
           display: none;
