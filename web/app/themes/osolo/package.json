@@ -53,6 +53,7 @@
     "custom-cursor": "^2.1.0",
     "gsap": "^3.10.2",
     "jquery": "^3.5.1",
+    "locomotive-scroll": "^4.1.4",
     "split-type": "^0.2.5"
   }
 }
