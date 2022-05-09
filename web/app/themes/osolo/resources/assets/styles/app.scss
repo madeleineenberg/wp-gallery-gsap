@@ -1,6 +1,7 @@
 /** Config */
 @import 'config/variables';
 @import 'config/external';
+@import 'config/locomotive-scroll';
 
 /** Common */
 @import 'common/global';
@@ -10,5 +11,6 @@
 @import 'components';
 
 @import 'blocks/hover-link';
+@import 'blocks/page-hero';
 @import 'partials/single-galleri.scss';
 @import 'partials/header.scss';
