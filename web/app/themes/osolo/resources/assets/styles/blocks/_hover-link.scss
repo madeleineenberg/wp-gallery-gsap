@@ -71,6 +71,7 @@ a {
     position: absolute;
     content: attr(data-text);
     transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+
     background: -webkit-linear-gradient(180deg, pink, #fc88a3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,0 +1,35 @@
+.footer {
+  min-height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+
+    a {
+      font-size: 25px;
+      margin-left: 30px;
+      line-height: 35px;
+      font-family: $oswald-extra-light;
+      color: map-get($theme-colors, 'pink');
+      letter-spacing: 3px;
+      transition: all 0.4s linear;
+
+      &:hover {
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  &__social-list {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+  }
+}
