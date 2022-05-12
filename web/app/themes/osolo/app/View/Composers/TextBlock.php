@@ -1,0 +1,27 @@
+<?php
+
+namespace App\View\Composers;
+
+use Roots\Acorn\View\Composer;
+
+class TextBlock extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        'blocks.text-block'
+    ];
+
+
+    public function with()
+    {
+        return [
+           'heading' => get_field('heading'),
+           'text' => get_field('text'),
+        ];
+    }
+
+}

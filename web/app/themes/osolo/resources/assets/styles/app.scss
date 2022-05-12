@@ -10,7 +10,13 @@
 /** Components */
 @import 'components';
 
+/** Blocks */
+
 @import 'blocks/hover-link';
 @import 'blocks/page-hero';
+@import 'blocks/text-block';
+@import 'blocks/social';
+
 @import 'partials/single-galleri.scss';
 @import 'partials/header.scss';
+@import 'partials/footer.scss';

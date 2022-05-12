@@ -1,0 +1,47 @@
+.c-text-block {
+  padding: 0 10%;
+  max-width: 1400px;
+  margin-bottom: 20%;
+
+  &__heading {
+    font-size: 10vw;
+    font-family: $lekton-regular;
+    text-transform: uppercase;
+    line-height: 1.12;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.9s ease;
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  &__text {
+    font-family: $lekton-regular;
+    font-size: 2vw;
+    max-width: 700px;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .underline {
+    width: 0%;
+    height: 8px;
+    border-radius: 15px;
+    transform-origin: left;
+    overflow: hidden;
+    background-color: map-get($theme-colors, 'pink');
+    transition: all 3s ease;
+
+    &.is-inview {
+      width: 100%;
+    }
+  }
+}
