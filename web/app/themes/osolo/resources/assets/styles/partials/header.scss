@@ -17,6 +17,11 @@ header.banner {
     font-family: $oswald-extra-light;
     color: map-get($theme-colors, 'pink');
     letter-spacing: 3px;
+    transition: all 0.4s linear;
+
+    &:hover {
+      letter-spacing: 5px;
+    }
   }
 
   .menu-open {
@@ -85,7 +90,7 @@ header.banner {
       overflow: hidden;
       cursor: pointer;
       color: rgba(255, 255, 255, 0.4);
-      transition: color 0.4s ease-in;
+      transition: all 0.4s ease-in;
 
       &:hover {
         color: map-get($theme-colors, 'creme-white');
@@ -101,7 +106,12 @@ header.banner {
         }
       }
       &-name {
-        letter-spacing: 3px;
+        letter-spacing: 6px;
+
+        // &:hover {
+        //   transition: all 0.4s ease-in;
+        //   letter-spacing: 6px;
+        // }
         @include media-breakpoint-up(lg) {
           width: 25%;
         }
