@@ -18,8 +18,8 @@
     <div class="wrapper">
         <div class="c-page-hero_image-wrapper">
             <img src="{{ $image['sizes']['large'] }}" alt="" class="c-page-hero__image" data-scroll
-                data-scroll-speed="-5">
+                data-scroll-speed="2">
         </div>
-        <h1 data-scroll data-scroll-speed="7">{{ $title }}</h1>
+        <h1 class="c-page-hero__title" data-scroll data-scroll-speed="-2">{{ $title }}</h1>
     </div>
 </div>
