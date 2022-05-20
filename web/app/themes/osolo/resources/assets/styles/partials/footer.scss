@@ -20,6 +20,11 @@
       letter-spacing: 3px;
       transition: all 0.4s linear;
 
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+        margin-left: 15px;
+      }
+
       &:hover {
         letter-spacing: 5px;
       }

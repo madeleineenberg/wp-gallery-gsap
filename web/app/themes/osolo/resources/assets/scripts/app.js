@@ -9,6 +9,7 @@ import gallery from './custom/gallery';
 import animateText from './custom/animateText';
 import header from './custom/header';
 import locomotiveScroll from './custom/locomotiveScroll';
+import socialLinks from './custom/socialLinks';
 
 $(() => {
   customCursor();
@@ -17,4 +18,5 @@ $(() => {
   animateText();
   header();
   locomotiveScroll();
+  socialLinks();
 });
