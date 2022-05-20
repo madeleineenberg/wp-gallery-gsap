@@ -20,6 +20,7 @@ class SocialLinks extends Composer
     {
         return [
            'links' => get_field('links'),
+           'default_icon' => get_field('default_icon'),
         ];
     }
 

@@ -5,47 +5,69 @@
   margin: 0 10% 10% 0;
   min-height: 1000px;
 
+  @include media-breakpoint-down(md) {
+    min-height: 500px;
+    margin: 0 0 10% 0;
+  }
+
   &__box {
     background-color: map-get($theme-colors, 'blackish');
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 860px;
-    height: 650px;
+    width: 1060px;
+    height: 750px;
     transition: width 1s ease;
     transition-delay: 0.5s;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      height: 350px;
+    }
 
     ion-icon {
       color: map-get($theme-colors, 'pink');
-      font-size: 14vw;
+      font-size: 15vw;
       transition: all 1s ease;
       transition-delay: 1s;
     }
 
     &.is-inview {
-      width: 460px;
+      width: 860px;
       ion-icon {
-        font-size: 18vw;
+        font-size: 20vw;
+
+        @include media-breakpoint-down(md) {
+          font-size: 50vw;
+        }
       }
     }
   }
 
-  ul {
-    list-style: none;
+  &__list {
     z-index: 10;
     transition: margin-left 1s ease;
     transition-delay: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &.is-inview {
-      margin-left: -200px;
+      position: absolute;
+      width: 100%;
     }
 
     a {
-      font-size: 5vw;
+      font-size: 7vw;
       color: map-get($theme-colors, 'creme-white');
       transition: all 0.6s ease;
-      filter: drop-shadow(5px 35px 5px rgba(53, 53, 53, 0.5));
+      // filter: drop-shadow(5px 35px 5px rgba(53, 53, 53, 0.5));
+
+      @include media-breakpoint-down(md) {
+        font-size: 19vw;
+      }
 
       &:hover {
         letter-spacing: 5px;

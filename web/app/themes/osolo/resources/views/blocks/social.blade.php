@@ -15,15 +15,15 @@
 
 <div class="c-social-links">
 
-    <div class="c-social-links__box" data-scroll data-scroll-speed="2">
-        <ion-icon name="magnet-outline"></ion-icon>
+    <div class="c-social-links__box" data-icon="{{ $default_icon }}" data-scroll data-scroll-speed="2">
+        <ion-icon name="{{ $default_icon }}"></ion-icon>
     </div>
-    <ul data-scroll>
+    <div class="c-social-links__list" data-scroll>
         @foreach ($links as $link)
-            <li>
-                <a href="{{ $link['link']['url'] }}"
-                    target="{{ $link['link']['target'] }}">{{ $link['link']['title'] }}</a>
-            </li>
+            <div>
+                <a href="{{ $link['link']['url'] }}" class="c-social-links__link" data-icon="{{ $link['icon'] }}"
+                    target="{{ $link['link']['target'] }}"> {{ $link['link']['title'] }} </a>
+            </div>
         @endforeach
-    </ul>
+    </div>
 </div>
