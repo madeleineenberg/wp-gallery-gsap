@@ -21,6 +21,7 @@ class TextBlock extends Composer
         return [
            'heading' => get_field('heading'),
            'text' => get_field('text'),
+           'icon' => get_field('icon')
         ];
     }
 
