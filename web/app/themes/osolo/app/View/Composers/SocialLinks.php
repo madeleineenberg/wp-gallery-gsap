@@ -12,7 +12,8 @@ class SocialLinks extends Composer
      * @var array
      */
     protected static $views = [
-        'blocks.social'
+        'blocks.social',
+       
     ];
 
 
