@@ -1,9 +1,11 @@
 <header class="banner">
-    <div class="logo__wrapper">
-        <a class="logo" href="{{ home_url('/') }}">
-            Madeleine Enberg
-        </a>
-    </div>
+
+    <a class="logo link" href="{{ home_url('/') }}">
+        <div>
+            <span class="link-text"> Madeleine Enberg</span>
+        </div>
+    </a>
+
     <div class="menu-open">
         <ion-icon name="menu-outline"></ion-icon>
     </div>

@@ -24,17 +24,59 @@
         font-size: 15px;
         margin-left: 15px;
       }
-
-      &:hover {
-        letter-spacing: 5px;
-      }
     }
   }
 
-  &__social-list {
-    list-style: none;
+  &__email {
+    display: flex;
+  }
+
+  &__social {
     display: flex;
     justify-content: end;
     margin-right: 30px;
   }
+}
+
+.link {
+  position: relative;
+  margin: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  will-change: transform;
+  /* background-color: red; */
+}
+
+.link-text {
+  pointer-events: none;
+  display: block;
+  line-height: 1;
+  position: relative;
+}
+
+.link > div:nth-child(1) span {
+  transition: 0.5s;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  display: inline-block;
+  transition-delay: calc(0.05s * var(--index));
+}
+
+.link > div:nth-child(2) span {
+  transition: 0.5s;
+  will-change: transform;
+  transition: 0.5s;
+  transform-origin: top;
+  transition-delay: calc(0.05s * var(--index));
+  display: inline-block;
+  transform: translate3d(0, 100%, 0) rotateX(90deg);
+}
+
+.link:hover > div:nth-child(1) span {
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.link:hover > div:nth-child(2) span {
+  transform: translate3d(0, 0%, 0) rotateX(0deg);
 }
