@@ -1,22 +1,20 @@
-
 import gsap from 'gsap';
 import SplitType from 'split-type';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-export default function(){
+export default function () {
   let titleSplit = new SplitType('h1', {
     types: 'lines',
     lineClass: 'split-child',
   });
 
-    gsap.from(titleSplit.lines, {
+  gsap.from(titleSplit.lines, {
     duration: 1.5,
     yPercent: 100,
     ease: 'power4.out',
     stagger: 0.1,
   });
-
 
   const links = gsap.utils.toArray('.navigation-item');
 
@@ -34,5 +32,8 @@ export default function(){
     });
   });
 
-
+  let subtitleSplit = new SplitType('h2', {
+    types: 'lines, words',
+    lineClass: 'subtitle_line',
+  });
 }

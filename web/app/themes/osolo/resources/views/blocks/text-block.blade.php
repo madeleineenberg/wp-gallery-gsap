@@ -13,9 +13,9 @@
 / --}}
 
 <div class="c-text-block">
-    <h2 class="c-text-block__heading" id="headline" data-scroll>{{ $heading }}</h2>
+    <h2 class="c-text-block__heading" id="headline" data-scroll data-scroll-repeat>{{ $heading }}</h2>
     <div class="underline" data-scroll></div>
-    <div class="c-text-block__text" data-scroll data-scroll-speed="-3.5">
+    <div class="c-text-block__text" data-scroll data-scroll-speed="5">
         <p>{{ $text }}
             @if ($icon)
                 <ion-icon name="{{ $icon }}"></ion-icon>
