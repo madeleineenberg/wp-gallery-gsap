@@ -6,6 +6,7 @@
 /** Common */
 @import 'common/global';
 @import 'common/fonts';
+@import 'common/button';
 
 /** Components */
 @import 'components';
@@ -16,6 +17,7 @@
 @import 'blocks/page-hero';
 @import 'blocks/text-block';
 @import 'blocks/social';
+@import 'blocks/note-board';
 
 @import 'partials/single-galleri.scss';
 @import 'partials/header.scss';

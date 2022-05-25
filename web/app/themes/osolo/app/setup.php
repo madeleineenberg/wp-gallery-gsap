@@ -156,6 +156,11 @@ add_action('rest_api_init', function () {
         'methods' => 'GET',
         'callback' => require('Routes/Gallery.php'),
     ]);
+    register_rest_route('portfolio', '/submissions', [
+        'methods' => 'GET',
+        'callback' => require('Routes/Submissions.php'),
+        'permission_callback' => '__return_true'
+    ]);
     
 });
 

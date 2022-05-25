@@ -10,6 +10,8 @@ import animateText from './custom/animateText';
 import header from './custom/header';
 import locomotiveScroll from './custom/locomotiveScroll';
 import socialLinks from './custom/socialLinks';
+import submissions from './custom/submissions';
+import rotatingText from './custom/rotatingText';
 
 $(() => {
   customCursor();
@@ -19,4 +21,6 @@ $(() => {
   header();
   locomotiveScroll();
   socialLinks();
+  submissions();
+  rotatingText();
 });
