@@ -5,8 +5,21 @@ export default function () {
       success: (response) => {
         if (response) {
           console.log(response);
+          $('.c-note-board__grid').append(response.html);
+          $('.c-note-board__grid').addClass('notes-ready');
+
+          let divs = $('.c-note-board__grid-item');
+
+          $(divs).each(function (index, elem) {
+            if (index % 2 === 0) {
+              $(elem).after('<div class="c-note-board__grid-item"></div>');
+            }
+            if (index % 3 === 0) {
+              $(elem).after('<div class="c-note-board__grid-item"></div>');
+            }
+          });
         }
       },
     });
-  }, 1000);
+  }, 100);
 }
