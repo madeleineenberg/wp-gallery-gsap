@@ -1,8 +1,8 @@
 export default function () {
-  $('.c-social-links__link').on('mouseover', function (e) {
+  $('a.c-social-links__link').on('mouseover', function () {
     $('.c-social-links__box')
       .find('ion-icon')
-      .attr('name', $(e.target).data('icon'));
+      .attr('name', $(this).data('icon'));
   });
 
   $('.c-social-links__link').on('mouseleave', function () {

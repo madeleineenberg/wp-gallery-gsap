@@ -3,7 +3,7 @@ export default function () {
 
   linkItems.forEach((item) => {
     let word = item.children[0].children[0].innerText.split('');
-    console.log(word);
+
     item.children[0].innerHTML = '';
     word.forEach((letter, idx) => {
       // --index used for css delay animation
