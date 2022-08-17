@@ -16,7 +16,7 @@ export default function () {
     .on('mouseover', '.navigation-item', function (evt) {
       tl = new TimelineLite();
       tl.to($('.project-preview'), 1, {
-        width: '600px',
+        width: '850px',
         ease: Expo.easeInOut,
       });
     })
