@@ -39,7 +39,8 @@ header.banner {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: -webkit-linear-gradient(180deg, #fc88a3, pink);
+  // background: -webkit-linear-gradient(180deg, #fc88a3, pink);
+  background: -webkit-linear-gradient(90deg, pink, #c7cbe3);
   z-index: 100;
   transform: translateX(500%);
 
@@ -82,10 +83,12 @@ header.banner {
       justify-content: space-between;
       width: 100%;
       height: 100px;
-      font-size: 40px;
+      font-size: 30px;
+      // font-size: 25px;
       overflow: hidden;
       cursor: pointer;
-      color: rgba(255, 255, 255, 0.4);
+      // color: rgba(255, 255, 255, 0.4);
+      color: map-get($theme-colors, 'creme-white');
       transition: all 0.4s ease-in;
 
       &:hover {
@@ -94,20 +97,21 @@ header.banner {
 
       &-number {
         padding: 0px 20px;
-        font-size: 25px;
-        font-family: $lekton-italic;
+        font-size: 15px;
+        font-family: $lekton-regular;
 
         @include media-breakpoint-up(lg) {
           width: 15%;
         }
       }
       &-name {
-        letter-spacing: 6px;
+        letter-spacing: 5px;
+        font-family: $oswald-bold;
+        transition: all 0.4s ease-in;
 
-        // &:hover {
-        //   transition: all 0.4s ease-in;
-        //   letter-spacing: 6px;
-        // }
+        &:hover {
+          letter-spacing: 7px;
+        }
         @include media-breakpoint-up(lg) {
           width: 25%;
         }
@@ -117,7 +121,7 @@ header.banner {
         width: 35%;
         font-size: 15px;
         padding: 25px 0px;
-        font-family: $lekton-italic;
+        font-family: $lekton-regular;
 
         @include media-breakpoint-down(lg) {
           display: none;

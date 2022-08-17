@@ -55,11 +55,11 @@ export default function () {
     {
       duration: 1,
       stagger: {
-        amount: 0.5,
+        amount: 1.5,
       },
       y: 100,
     },
-    '-=1.3',
+    '-=1.6',
   );
   tl.from(
     '.menu-item-sub',
