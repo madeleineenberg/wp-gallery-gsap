@@ -20,10 +20,10 @@
     </div>
     <div class="c-social-links__list" data-scroll>
         @foreach ($links as $link)
-            <div>
-                <a href="{{ $link['link']['url'] }}" class="c-social-links__link" data-icon="{{ $link['icon'] }}"
-                    target="{{ $link['link']['target'] }}"> {{ $link['link']['title'] }} </a>
-            </div>
+            <a href="{{ $link['link']['url'] }}" class="c-social-links__link link" data-icon="{{ $link['icon'] }}"
+                target="{{ $link['link']['target'] }}">
+                <div><span class="link-text"> {{ $link['link']['title'] }}</div></span>
+            </a>
         @endforeach
     </div>
 </div>

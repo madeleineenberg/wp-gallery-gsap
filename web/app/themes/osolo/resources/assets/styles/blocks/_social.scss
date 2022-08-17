@@ -11,16 +11,18 @@
   }
 
   &__box {
-    background-color: map-get($theme-colors, 'blackish');
+    background: -webkit-linear-gradient(90deg, pink, #c7cbe3);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     width: 1060px;
-    height: 750px;
+    height: 850px;
     transition: width 1s ease;
     transition-delay: 0.5s;
     position: relative;
+    border-radius: 100%;
+    filter: blur(10px);
 
     @include media-breakpoint-down(md) {
       height: 350px;
@@ -31,7 +33,7 @@
       font-size: 15vw;
       transition: all 1s ease;
       transition-delay: 1s;
-      // filter: drop-shadow(5px 45px 5px rgba(53, 53, 53, 0.5));
+      // filter: drop-shadow(5px 45px 5px rgba(53, 53, 53, 0.2));
     }
 
     &.is-inview {
@@ -69,9 +71,9 @@
         font-size: 19vw;
       }
 
-      &:hover {
-        letter-spacing: 5px;
-      }
+      // &:hover {
+      //   letter-spacing: 5px;
+      // }
     }
   }
 }
