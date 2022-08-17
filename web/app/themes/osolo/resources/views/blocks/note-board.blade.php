@@ -15,7 +15,7 @@
 <div class="c-note-board" id="note-board">
     <h2 class="c-note-board__heading" data-scroll data-scroll-repeat>{{ $heading }}</h2>
 
-    <div class="c-note-board__grid">
+    <div class="c-note-board__grid" data-scroll>
     </div>
     <div class="c-note-board__ninjaform">
         @if ($id)

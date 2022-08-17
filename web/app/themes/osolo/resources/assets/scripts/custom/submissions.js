@@ -12,10 +12,14 @@ export default function () {
 
           $(divs).each(function (index, elem) {
             if (index % 2 === 0) {
-              $(elem).after('<div class="c-note-board__grid-item"></div>');
+              $(elem).after(
+                '<div class="c-note-board__grid-item empty-note"></div>',
+              );
             }
             if (index % 3 === 0) {
-              $(elem).after('<div class="c-note-board__grid-item"></div>');
+              $(elem).after(
+                '<div class="c-note-board__grid-item empty-note-color" data-scroll data-scroll-speed="2"></div>',
+              );
             }
           });
         }
