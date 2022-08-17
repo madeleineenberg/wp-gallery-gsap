@@ -18,7 +18,7 @@
   transform-style: preserve-3d;
   transform-origin: bottom;
   display: inline-block;
-  transition-delay: calc(0.05s * var(--index));
+  // transition-delay: calc(0.05s * var(--index));
 }
 
 .link > div:nth-child(2) span {
@@ -26,7 +26,7 @@
   will-change: transform;
   transition: 0.5s;
   transform-origin: top;
-  transition-delay: calc(0.05s * var(--index));
+  // transition-delay: calc(0.05s * var(--index));
   display: inline-block;
   transform: translate3d(0, 100%, 0) rotateX(90deg);
 }
