@@ -2,25 +2,61 @@
 # This file is distributed under the same license as the Plugins - Ninja Forms Contact Form &#8211; The Drag and Drop Form Builder for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-04 10:13:30+0000\n"
+"PO-Revision-Date: 2022-08-18 12:13:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Ninja Forms Contact Form &#8211; The Drag and Drop Form Builder for WordPress - Stable (latest release)\n"
 
-#: includes/Routes/Submissions.php:58 includes/Routes/Submissions.php:72
+#: includes/Admin/Processes/DeleteBatchFile.php:32
+msgid "File could not be deleted"
+msgstr "Fil kunde inte tas bort"
+
+#: includes/Admin/Processes/DeleteBatchFile.php:28
+msgid "File was deleted"
+msgstr "Fil togs bort"
+
+#: includes/Admin/Processes/DeleteBatchFile.php:22
+msgid "File could not be found for deletion"
+msgstr "Filen kunde inte hittas för borttagning"
+
+#: includes/Routes/Submissions.php:80
+msgid "Array of Submissions"
+msgstr "Array med inlämningar"
+
+#: includes/Routes/Submissions.php:60
+msgid "Update single Submission"
+msgstr "Uppdatera enskild inlämning"
+
+#: includes/Actions/Save.php:35 includes/Config/FormActionDefaults.php:24
+msgid "Record Submission"
+msgstr "Lagra inlämning"
+
+#: includes/Routes/Submissions.php:190
+msgid "Settings data"
+msgstr "Inställningsdata"
+
+#: includes/Admin/Metaboxes/CalculationsReact.php:97
+msgid " - Parsed"
+msgstr " - Analyserat"
+
+#: includes/Admin/Metaboxes/CalculationsReact.php:90
+msgid " - Raw"
+msgstr " - Raw"
+
+#: includes/Routes/Submissions.php:74 includes/Routes/Submissions.php:94
 msgid "Update Submission"
 msgstr "Uppdatera inlämning"
 
-#: includes/Routes/Submissions.php:30
+#: includes/Routes/Submissions.php:32
 msgid "Form IDs"
 msgstr "Formulär-ID:n"
 
 #: includes/Admin/Processes/ExportSubmissions.php:116
-#: includes/Admin/Processes/ExportSubmissions.php:163
+#: includes/Admin/Processes/ExportSubmissions.php:172
 msgid "Unable to write file."
 msgstr "Det gick inte att skriva filen."
 
@@ -40,11 +76,15 @@ msgstr "Webbplatsnyckel för reCAPTCHA v2"
 msgid "reCAPTCHA v3"
 msgstr "reCAPTCHA v3"
 
-#: includes/Admin/Menus/Submissions.php:87 build/submissions.js:1
+#: includes/Admin/Menus/Submissions.php:101 build/submissions.js:1
 msgid "Trigger Email Action"
 msgstr "Utlös e-poståtgärd"
 
-#: includes/Routes/Submissions.php:176 build/submissions.js:1
+#: includes/Routes/Submissions.php:222
+msgid "Email Action Settings"
+msgstr "Inställningar för e-poståtgärd"
+
+#: includes/Routes/Submissions.php:216 build/submissions.js:1
 msgid "Submission ID"
 msgstr "Inlämnings-ID"
 
@@ -123,6 +163,10 @@ msgstr "Autoloader hittades inte för Ninja Forms Blocks – försök köra <cod
 #: blocks/bootstrap.php:202
 msgid "Preview token failed validation"
 msgstr "Misslyckades att validera token för förhandsgranskning"
+
+#: blocks/bootstrap.php:174
+msgid "Current page of the collection."
+msgstr "Nuvarande sida av samlingen."
 
 #: blocks/bootstrap.php:166
 msgid "Maximum number of items to be returned in result set."
@@ -529,7 +573,7 @@ msgstr " för att bekräfta."
 
 #: includes/Admin/Menus/Settings.php:191 includes/Admin/Menus/Settings.php:217
 msgid "Type "
-msgstr "Skriv"
+msgstr "Skriv "
 
 #: includes/Admin/Menus/Settings.php:190 includes/Admin/Menus/Settings.php:216
 msgid "You WILL lose any forms or submissions created on this version of Ninja Forms."
@@ -557,11 +601,16 @@ msgstr "Minvärde"
 
 #: includes/Config/PluginSettingsAdvanced.php:124
 msgid "Trash Expired Submissions"
-msgstr "Släng inlämningar som löpt ut i papperskorgen"
+msgstr "Lägg inlämningar som löpt ut i papperskorgen"
 
 #: includes/Config/PluginSettingsAdvanced.php:123
 msgid "Move To Trash"
 msgstr "Flytta till papperskorgen"
+
+#: includes/Admin/Menus/ImportExport.php:174
+#: includes/Admin/Menus/Settings.php:194 includes/Admin/Menus/Settings.php:220
+msgid "Are you sure you want to trash all expired submissions?"
+msgstr "Är du säker på att du vill lägga alla inlämningar som löpt ut i papperskorgen?"
 
 #: includes/Templates/admin-menu-dashboard.html.php:98
 msgid "Setup"
@@ -601,7 +650,7 @@ msgstr "Hanterare för utökningar (beta)"
 
 #: includes/Config/i18nDashboard.php:81
 msgid "Processing..."
-msgstr "Bearbetar…"
+msgstr "Behandlas …"
 
 #: includes/Config/i18nDashboard.php:80
 msgid "Clean up my data"
@@ -850,13 +899,13 @@ msgstr "Flytta till papperskorgen"
 msgid "Delete All Data"
 msgstr "Ta bort all data"
 
-#: includes/Admin/Menus/Submissions.php:136
-#: includes/Admin/Menus/Submissions.php:144
+#: includes/Admin/Menus/Submissions.php:150
+#: includes/Admin/Menus/Submissions.php:158
 msgid "Trashed"
 msgstr "Borttagna"
 
-#: includes/Admin/Menus/Submissions.php:133
-#: includes/Admin/Menus/Submissions.php:142
+#: includes/Admin/Menus/Submissions.php:147
+#: includes/Admin/Menus/Submissions.php:156
 msgid "Completed"
 msgstr "Slutförd"
 
@@ -882,6 +931,10 @@ msgstr "Du måste ange ett giltigt formulär-ID."
 #: includes/AJAX/Controllers/Submission.php:91
 msgid "Form does not exist."
 msgstr "Formulär finns inte."
+
+#: includes/Config/FieldSettings.php:447
+msgid "This value will be used as the HTML input \"name\" attribute."
+msgstr "Detta värde kommer användas som “name“-attribut i HTML-inmatningsfältet."
 
 #: includes/Config/FieldSettings.php:443
 msgid "Custom Name Attribute"
@@ -1236,7 +1289,7 @@ msgstr "Välj fält"
 
 #: includes/Config/ActionCollectPaymentSettings.php:52
 msgid "Select Calculation"
-msgstr "Väl beräkning"
+msgstr "Välj beräkning"
 
 #: includes/Config/ActionCollectPaymentSettings.php:43
 msgid "Fixed Amount"
@@ -1313,6 +1366,10 @@ msgstr "WordPress"
 #: includes/MergeTags/Other.php:13
 msgid "Other"
 msgstr "Annat"
+
+#: includes/Fields/ListState.php:26
+msgid "US States"
+msgstr "Amerikanska stater"
 
 #: includes/Config/MergeTagsWP.php:170
 msgid "User URL"
@@ -1396,15 +1453,11 @@ msgstr "Formuläret har nått sin inlämningsgräns."
 
 #: includes/Admin/Menus/Settings.php:75
 msgid "Contact Form 7 is currently activated."
-msgstr "Contact Form 7 är för närvarande aktiverad."
+msgstr "Contact Form 7 är för närvarande aktiverat."
 
 #: includes/Admin/AllFormsTable.php:76
 msgid "Created"
 msgstr "Skapad"
-
-#: includes/Actions/Save.php:35 includes/Config/FormActionDefaults.php:24
-msgid "Store Submission"
-msgstr "Lagra inlämning"
 
 #: includes/Actions/Custom.php:35
 msgid "WP Hook"
@@ -1484,6 +1537,11 @@ msgstr "MM.DD.ÅÅÅÅ"
 #: includes/Config/FieldSettings.php:609
 msgid "DD.MM.YYYY"
 msgstr "DD.MM.ÅÅÅÅ"
+
+#: includes/AJAX/Controllers/Submission.php:564
+#: includes/AJAX/REST/Controller.php:99
+msgid "The server encountered an error during processing."
+msgstr "Servern stötte på ett fel under bearbetningen."
 
 #: includes/Libraries/BackgroundProcessing/classes/wp-background-process.php:425
 msgid "Every %d Minutes"
@@ -1729,6 +1787,10 @@ msgstr "Halvskärm"
 #: includes/Templates/ui-nf-toggle-drawer.html.php:2
 msgid "Full screen"
 msgstr "Helskärm"
+
+#: includes/Templates/admin-menu-new-form.html.php:292
+msgid "Toggle Drawer"
+msgstr "Slå på/av verktygslåda"
 
 #: includes/Templates/admin-menu-new-form.html.php:247
 msgid "Delete (^ + D + click)"
@@ -2115,10 +2177,6 @@ msgstr "Tomma formulär"
 msgid "Baz"
 msgstr "Baz"
 
-#: includes/Database/MockData.php:21
-msgid "Bar"
-msgstr "Bar"
-
 #: includes/Database/MockData.php:14
 msgid "Foo"
 msgstr "Foo"
@@ -2139,7 +2197,7 @@ msgstr "Honeypot-fel"
 #: includes/Config/FormDisplaySettings.php:242
 #: includes/Config/i18nFrontEnd.php:19
 msgid "Please correct errors before submitting this form."
-msgstr "Korrigera fel innan du skickar in det här formuläret."
+msgstr "Rätta till fel innan du skickar in detta formulär."
 
 #: includes/Config/i18nFrontEnd.php:17
 msgid "Insert Media"
@@ -2274,7 +2332,7 @@ msgstr "Gå och skaffa ett liv, skriptkillar"
 
 #: includes/Templates/admin-menu-dashboard.html.php:182
 msgid "Date Created"
-msgstr "Skapat datum"
+msgstr "Skapades den"
 
 #: includes/AJAX/Controllers/SavedFields.php:27
 #: includes/AJAX/Controllers/SavedFields.php:54
@@ -2523,7 +2581,7 @@ msgstr "smtp_port"
 
 #: includes/Admin/Menus/SystemStatus.php:199
 msgid "Host Name"
-msgstr "Värdnamn"
+msgstr "Servernamn"
 
 #: includes/Admin/Menus/SystemStatus.php:198
 msgid "Server IP Address"
@@ -2539,7 +2597,7 @@ msgstr "Utökningslicenser"
 
 #: includes/Admin/Menus/ImportExport.php:459
 msgid "File Upload Error"
-msgstr "Filöverföringsfel"
+msgstr "Fel vid filuppladdning"
 
 #: includes/Admin/Menus/ImportExport.php:454
 msgid "Unknown upload error."
@@ -2587,7 +2645,7 @@ msgstr "Inlämningsinfo"
 
 #: includes/Admin/CPT/Submission.php:72
 msgid "Form Submissions"
-msgstr "Formulärinsändningar"
+msgstr "Inlämningar för formulär"
 
 #: includes/Admin/CPT/Submission.php:71
 msgid "Submission"
@@ -2779,7 +2837,7 @@ msgstr "Visningsinställningar"
 
 #: includes/Config/FormRestrictionSettings.php:104
 msgid "Submission Limit"
-msgstr "Insändningsgräns"
+msgstr "Inlämningsgräns"
 
 #: includes/Config/FormRestrictionSettings.php:55
 msgid "Logged In"
@@ -2835,7 +2893,7 @@ msgstr "Används för att markera ett fält för bearbetning."
 
 #: includes/Config/FieldSettings.php:1259
 msgid "A case sensitive answer to help prevent spam submissions of your form."
-msgstr "Ett skiftlägeskänsligt svar för att undvika skräppostinsändningar av ditt formulär."
+msgstr "Ett skiftlägeskänsligt svar för att undvika skräppostinlämningar av ditt formulär."
 
 #: includes/Config/FieldSettings.php:1255
 msgid "Answer"
@@ -2858,6 +2916,10 @@ msgstr "Pristyp"
 msgid "Cost Dropdown"
 msgstr "Rullgardinsmeny för kostnad"
 
+#: includes/Config/FieldSettings.php:1215
+msgid "Single Cost"
+msgstr "Enskild kostnad"
+
 #: includes/Config/FieldSettings.php:1186
 msgid "Cost Options"
 msgstr "Prisalternativ"
@@ -2877,6 +2939,10 @@ msgstr "Flera produkter – välj en"
 #: includes/Config/FieldSettings.php:1147
 msgid "Multi Product - Choose Many"
 msgstr "Flera produkter – välj många"
+
+#: includes/Config/FieldSettings.php:1143
+msgid "Multi Product - Dropdown"
+msgstr "Flera produkter – rullgardinsmeny"
 
 #: includes/Config/FieldSettings.php:1139
 msgid "Single Product (default)"
@@ -2928,7 +2994,7 @@ msgstr "Antal sekunder för nedräkningen"
 
 #: includes/Config/FieldSettings.php:807
 msgid "This column in the submissions table will sort by number."
-msgstr "Denna kolumn i insändningstabellen kommer att sortera efter nummer."
+msgstr "Denna kolumn i inlämningstabellen kommer att sortera efter nummer."
 
 #: includes/Config/FieldSettings.php:803
 msgid "Sort as Numeric"
@@ -2936,7 +3002,7 @@ msgstr "Sortera som numerisk"
 
 #: includes/Config/FieldSettings.php:779
 msgid "Description"
-msgstr "﻿Beskrivning"
+msgstr "Beskrivning"
 
 #: includes/Config/FieldSettings.php:742
 msgid "Label used when viewing and exporting submissions."
@@ -3043,6 +3109,10 @@ msgstr "Min"
 #: includes/Config/FieldSettings.php:101
 msgid "Number Options"
 msgstr "Sifferalternativ"
+
+#: includes/Config/FieldSettings.php:91
+msgid "Ensure that this field is completed before allowing the form to be submitted."
+msgstr "Se till att detta fält är ifyllt innan du tillåter att formuläret skickas."
 
 #: includes/Config/FieldSettings.php:87
 msgid "Required Field"
@@ -3268,7 +3338,7 @@ msgstr "Anpassat första alternativ"
 
 #: includes/Config/FieldSettings.php:957
 msgid "Use a custom first option"
-msgstr "Använd anpassat första alternativ"
+msgstr "Använd ett anpassat första alternativ"
 
 #: includes/Fields/ListCountry.php:22
 msgid "Country"
@@ -4325,7 +4395,7 @@ msgstr "Användarens e-postadress"
 #: includes/Config/MergeTagsDeprecated.php:170
 #: includes/Config/MergeTagsWP.php:222
 msgid "Admin Email"
-msgstr "E-postadress admin"
+msgstr "E-postadress för administration"
 
 #: lib/StepProcessing/menu.php:110
 msgid "No Action Specified..."
@@ -4378,6 +4448,10 @@ msgstr "SMTP"
 #: includes/Admin/Menus/SystemStatus.php:197
 msgid "SUHOSIN Installed"
 msgstr "SUHOSIN installerad"
+
+#: includes/Admin/Menus/SystemStatus.php:196
+msgid "PHP Max Input Vars"
+msgstr "Maxvärden för PHP inmatning"
 
 #: includes/Admin/Menus/SystemStatus.php:195
 msgid "PHP Time Limit"
@@ -4581,6 +4655,14 @@ msgstr "Kräv att användare ska vara inloggad för att se formulär?"
 msgid "Restrictions"
 msgstr "Begränsningar"
 
+#: includes/Config/FormDisplaySettings.php:90
+msgid "Hide successfully completed form?"
+msgstr "Dölj formulär som skickats utan problem?"
+
+#: includes/Config/FormDisplaySettings.php:76
+msgid "Clear successfully completed form?"
+msgstr "Rensa formulär som skickats utan problem?"
+
 #: includes/Config/FormDisplaySettings.php:26
 msgid "Display Form Title"
 msgstr "Visa formulärets rubrik"
@@ -4735,8 +4817,8 @@ msgstr "Fel"
 msgid "You do not have permission to install plugin updates"
 msgstr "Du har inte behörighet att installera tilläggsuppdateringar"
 
-#: includes/Database/Models/Submission.php:388
-#: includes/Exports/SubmissionCsvExport.php:282
+#: includes/Database/Models/Submission.php:398
+#: includes/Exports/SubmissionCsvExport.php:257
 msgid "Date Submitted"
 msgstr "Datum inskickat"
 
@@ -4767,7 +4849,7 @@ msgid "User Submitted Values"
 msgstr "Användarens inskickade värden"
 
 #: includes/Admin/CPT/DownloadAllSubmissions.php:163
-#: includes/Admin/Menus/Submissions.php:380 build/submissions.js:1
+#: includes/Admin/Menus/Submissions.php:394 build/submissions.js:1
 msgid "Download All Submissions"
 msgstr "Ladda ner alla inlämningar"
 
@@ -4787,17 +4869,17 @@ msgstr "Välj ett formulär"
 #: includes/Admin/Menus/Settings.php:195 includes/Admin/Menus/Settings.php:221
 #: build/submissions.js:1
 msgid "Trash"
-msgstr "Ta bort"
+msgstr "Lägg i papperskorgen"
 
 #: includes/Admin/CPT/Submission.php:142
-#: includes/Admin/Menus/Submissions.php:362
-#: includes/Admin/Menus/Submissions.php:363 build/submissions.js:1
+#: includes/Admin/Menus/Submissions.php:376
+#: includes/Admin/Menus/Submissions.php:377 build/submissions.js:1
 #: src/components/displayBulkExport.js:225
 msgid "Export"
 msgstr "Exportera"
 
 #: includes/Admin/CPT/Submission.php:192
-#: includes/Admin/Menus/Submissions.php:190
+#: includes/Admin/Menus/Submissions.php:204
 #: includes/Config/FieldSettings.php:344
 #: includes/Config/MergeTagsDeprecated.php:183
 #: includes/Config/MergeTagsOther.php:25 includes/Database/MockData.php:620
@@ -4805,12 +4887,12 @@ msgid "Date"
 msgstr "Datum"
 
 #: includes/Admin/CPT/Submission.php:160
-#: includes/Admin/Menus/Submissions.php:169
+#: includes/Admin/Menus/Submissions.php:183
 msgid "#"
 msgstr "#"
 
 #: includes/Admin/CPT/Submission.php:56 includes/Admin/CPT/Submission.php:57
-#: includes/Admin/Menus/Submissions.php:627 includes/Routes/Submissions.php:44
+#: includes/Admin/Menus/Submissions.php:641 includes/Routes/Submissions.php:46
 #: build/submissions.js:1
 msgid "Submissions"
 msgstr "Inlämningar"
@@ -4834,7 +4916,7 @@ msgstr "Åtgärdsnamn"
 #: includes/Config/FormCalculationSettings.php:12
 #: includes/Templates/admin-menu-dashboard.html.php:164
 msgid "Add New"
-msgstr "Lägg till ny"
+msgstr "Lägg till nytt"
 
 #: includes/Config/FieldSettings.php:981 includes/Config/i18nDashboard.php:65
 #: includes/Templates/admin-menu-new-form.html.php:256
