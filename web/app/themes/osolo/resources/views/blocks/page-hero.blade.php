@@ -9,7 +9,7 @@
   PostTypes: page post
   SupportsAlign: false
   SupportsMode: false
-  SupportsMultiple: true
+  SupportsMultiple: false
 / --}}
 
 

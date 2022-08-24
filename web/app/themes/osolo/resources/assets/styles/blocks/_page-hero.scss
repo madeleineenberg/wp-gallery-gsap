@@ -35,16 +35,18 @@
 
   &__title {
     font-family: $oswald-bold;
-    font-size: 10vw;
+    // font-family: $lekton-regular;
+    font-size: 8vw;
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    overflow: hidden;
+    letter-spacing: 5px;
 
     @include media-breakpoint-down(md) {
       font-size: 18vw;
+      left: 40%;
     }
 
     .split-child {
