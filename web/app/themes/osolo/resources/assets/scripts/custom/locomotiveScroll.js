@@ -8,7 +8,19 @@ export default function () {
     const scroll = new LocomotiveScroll({
       el: scrollContainer,
       smooth: true,
+      inertia: 0.8,
       smoothClass: 'has-scroll-smooth',
+      getDirection: true,
+      mobile: {
+        breakpoint: 0,
+        smooth: false,
+        getDirection: true,
+      },
+      tablet: {
+        breakpoint: 0,
+        smooth: false,
+        getDirection: true,
+      },
     });
 
     //update scroll when images are loaded
