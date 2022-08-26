@@ -19,6 +19,7 @@ class NoteBoard extends Composer
     public function with()
     {
         return [
+            'label' => get_field('label'),
            'heading' => get_field('heading'),
            'id' => get_field('ninja_forms_id'),
         ];

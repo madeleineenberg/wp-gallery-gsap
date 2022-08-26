@@ -3,6 +3,25 @@
     "title": "Block - Note board",
     "fields": [
         {
+            "key": "field_630879b36faec",
+            "label": "Label",
+            "name": "label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_628784d904e83",
             "label": "Heading",
             "name": "heading",
@@ -59,5 +78,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653048594
+    "modified": 1661499844
 }

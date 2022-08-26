@@ -13,6 +13,12 @@
 / --}}
 
 <div class="c-note-board" id="note-board">
+    @if ($label)
+        <div class="c-note-board__text">
+            <p>{{ $label }}</p>
+            <div class="underline" data-scroll></div>
+        </div>
+    @endif
     <h2 class="c-note-board__heading" data-scroll data-scroll-repeat>{{ $heading }}</h2>
 
     <div class="c-note-board__grid" data-scroll>
