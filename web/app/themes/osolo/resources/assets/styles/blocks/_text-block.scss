@@ -2,20 +2,9 @@
   padding: 0 10%;
   max-width: 1400px;
   margin-bottom: 20%;
+  position: relative;
 
   &__heading {
-    // font-size: 10vw;
-    // font-family: $lekton-regular;
-    // text-transform: uppercase;
-    // line-height: 1.12;
-    // opacity: 0;
-    // overflow: hidden;
-    // transition: opacity 3s ease;
-
-    // &.is-inview {
-    //   opacity: 1;
-    //   transform: translateY(0px);
-    // }
     @extend .c-note-board__heading;
   }
 
@@ -35,13 +24,19 @@
       }
     }
 
-    @include media-breakpoint-down(md) {
+    p {
+      position: relative;
+    }
+
+    @include media-breakpoint-down(lg) {
       font-size: 26px;
       margin-top: 15px;
     }
 
     ion-icon {
       transform: rotate(20deg);
+      position: absolute;
+      bottom: 10px;
     }
   }
 
@@ -57,6 +52,23 @@
 
     &.is-inview {
       width: 100%;
+    }
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    aspect-ratio: 4 / 3;
+    opacity: 0.8;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 120%;
+      object-fit: cover;
+      transform: scale(1);
     }
   }
 }
