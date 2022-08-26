@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   background-image: $texture;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   position: relative;
 
   @include media-breakpoint-down(md) {
@@ -45,7 +45,7 @@
     letter-spacing: 5px;
 
     @include media-breakpoint-down(md) {
-      font-size: 18vw;
+      font-size: 10vw;
       left: 40%;
     }
 
