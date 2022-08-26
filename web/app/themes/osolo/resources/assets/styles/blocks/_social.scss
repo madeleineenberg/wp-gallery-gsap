@@ -4,10 +4,50 @@
   align-items: center;
   margin: 0 10% 10% 0;
   min-height: 1000px;
+  position: relative;
 
-  @include media-breakpoint-down(md) {
+  &__text {
+    position: absolute;
+    top: -10%;
+    left: 42%;
+    z-index: 10;
+
+    p {
+      font-family: $lekton-regular;
+      font-size: 24px;
+    }
+    .underline {
+      width: 0%;
+      height: 8px;
+      border-radius: 15px;
+      transform-origin: left;
+      overflow: hidden;
+      background-color: map-get($theme-colors, 'pink');
+      transition: all 3s ease;
+      filter: blur(5px);
+
+      &.is-inview {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      left: 7%;
+
+      .underline {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
     min-height: 500px;
     margin: 0 0 10% 0;
+    padding: 20% 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 300px 0;
   }
 
   &__box {
@@ -18,6 +58,7 @@
     overflow: hidden;
     width: 1060px;
     height: 850px;
+
     transition: width 1s ease;
     transition-delay: 0.5s;
     position: relative;
@@ -27,8 +68,9 @@
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
       0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       height: 350px;
+      width: 400px;
     }
 
     ion-icon {
@@ -36,7 +78,6 @@
       font-size: 15vw;
       transition: all 1s ease;
       transition-delay: 1s;
-      // filter: drop-shadow(5px 45px 5px rgba(53, 53, 53, 0.2));
     }
 
     &.is-inview {
@@ -47,6 +88,10 @@
         @include media-breakpoint-down(md) {
           font-size: 50vw;
         }
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 460px;
       }
     }
   }
