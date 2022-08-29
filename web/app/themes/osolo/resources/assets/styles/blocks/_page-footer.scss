@@ -10,11 +10,63 @@
     z-index: 999;
   }
   &__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     background-color: map-get($theme-colors, 'black');
     background-image: $texture;
     color: map-get($theme-colors, 'creme-white');
     min-height: 1000px;
     z-index: -1;
     margin-top: -240px;
+    padding: 6% 30px 5% 30px;
+
+    &-top-section {
+      font-family: $lekton-regular;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-middle-section {
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      place-self: center;
+      text-align: center;
+
+      h2 {
+        @extend .c-note-board__heading;
+        color: map-get($theme-colors, 'creme-white');
+      }
+      &__sub-text {
+        font-family: $lekton-regular;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &-icon {
+          transform: rotate(40deg);
+          animation: myarrowmove 2s ease-in-out infinite;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+
+    &-bottom-section {
+      grid-column: 3;
+      grid-row: 3;
+      place-self: end;
+      font-family: $lekton-regular;
+      p {
+        margin-bottom: 5px;
+        float: right;
+      }
+    }
+  }
+}
+
+@keyframes myarrowmove {
+  50% {
+    transform: rotate(-90deg);
   }
 }

@@ -18,15 +18,18 @@
 </div>
 <div class="c-page-footer__inner">
     <div class="c-page-footer__inner-top-section">
-        <div>Currently fontend developer at Osolo</div>
-        <div>Based in Stockholm Sweden</div>
+        <p>{{ $work }}</p>
+        <p>{{ $location }}</p>
     </div>
     <div class="c-page-footer__inner-middle-section">
-        <p>Buy a print? send me a message</p>
-        <h2><a href="mailto:info@madeleineenberg.com">info@madeleineenberg.com</a></h2>
+        <h2 data-scroll data-scroll-repeat>{{ $bold_text }}</h2>
+        <p class="c-page-footer__inner-middle-section__sub-text">{{ $sub_text }}<ion-icon name="arrow-down-outline"
+                class="c-page-footer__inner-middle-section__sub-text-icon">
+            </ion-icon>
+        </p>
     </div>
     <div class="c-page-footer__inner-bottom-section">
-        <p>This site is designed and developed by Madeleine Enberg</p>
-        <p>All images &copy; 2022 Madeleine Enberg</p>
+        <p>{{ $credits }}</p>
+        <p>All images &copy; {{ date('Y') }} Madeleine Enberg</p>
     </div>
 </div>
