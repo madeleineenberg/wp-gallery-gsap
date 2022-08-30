@@ -16,7 +16,9 @@ export default function () {
     stagger: 0.1,
   });
 
-  const links = gsap.utils.toArray('.navigation-item');
+  const links = gsap.utils.toArray(
+    '.navigation-item, .c-image-reveal__mobile__list-item',
+  );
 
   links.forEach((link, i) => {
     const anim = gsap.fromTo(

@@ -12,6 +12,7 @@ import locomotiveScroll from './custom/locomotiveScroll';
 import socialLinks from './custom/socialLinks';
 import submissions from './custom/submissions';
 import rotatingText from './custom/rotatingText';
+import imageReveal from './custom/image-reveal';
 
 $(() => {
   customCursor();
@@ -23,4 +24,5 @@ $(() => {
   socialLinks();
   submissions();
   rotatingText();
+  imageReveal();
 });
