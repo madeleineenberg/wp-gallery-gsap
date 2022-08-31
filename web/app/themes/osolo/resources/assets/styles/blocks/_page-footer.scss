@@ -2,12 +2,17 @@
   &__panel {
     background-image: $texture;
     background-color: map-get($theme-colors, 'creme-white');
-    color: map-get($theme-colors, 'black');
+
     min-height: 500px;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
       0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
       0 32px 16px rgba(0, 0, 0, 0.09);
     z-index: 999;
+
+    &.light-mode {
+      background-image: $texture;
+      background-color: map-get($theme-colors, 'black');
+    }
   }
   &__inner {
     display: grid;
@@ -60,6 +65,16 @@
       p {
         margin-bottom: 5px;
         float: right;
+      }
+    }
+
+    &.light-mode {
+      background-color: map-get($theme-colors, 'creme-white');
+      background-image: $texture;
+      color: map-get($theme-colors, 'black');
+
+      h2 {
+        color: map-get($theme-colors, 'blackish');
       }
     }
   }

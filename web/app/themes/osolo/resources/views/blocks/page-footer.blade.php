@@ -14,9 +14,9 @@
 
 
 
-<div class="c-page-footer__panel" data-scroll data-scroll-speed="5">
+<div class="c-page-footer__panel {{ $mode_settings ? 'light-mode' : '' }}" data-scroll data-scroll-speed="5">
 </div>
-<div class="c-page-footer__inner">
+<div class="c-page-footer__inner  {{ $mode_settings ? 'light-mode' : '' }}">
     <div class="c-page-footer__inner-top-section">
         <p>{{ $work }}</p>
         <p>{{ $location }}</p>

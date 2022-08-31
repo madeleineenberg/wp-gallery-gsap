@@ -27,7 +27,7 @@ export default function () {
   }, 100);
 
   //eyes follows mousemove
-  if ($('.body').hasClass('contact')) {
+  if ($('body').hasClass('contact')) {
     $(document).on('mousemove', function (event) {
       let eye = $('.eye');
       let x = eye.offset().left + eye.width() / 2;
