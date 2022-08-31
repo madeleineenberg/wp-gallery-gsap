@@ -12,7 +12,7 @@
   SupportsMultiple: false
 / --}}
 
-<div class="c-image-reveal">
+<div class="c-image-reveal" id="image-reveal">
     <ul>
         @foreach ($galleries as $key => $gallery)
             <li class="c-image-reveal__item" data-scroll>

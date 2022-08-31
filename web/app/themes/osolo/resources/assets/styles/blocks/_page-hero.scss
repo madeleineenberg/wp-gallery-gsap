@@ -35,13 +35,14 @@
 
   &__title {
     font-family: $oswald-bold;
+
     // font-family: $lekton-regular;
     font-size: 8vw;
     position: absolute;
     top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
+    // text-transform: uppercase;
     letter-spacing: 5px;
 
     @include media-breakpoint-down(md) {
@@ -49,7 +50,7 @@
       left: 40%;
     }
 
-    .split-child {
+    .word {
       display: inline-block !important;
     }
   }
