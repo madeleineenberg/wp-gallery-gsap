@@ -13,6 +13,7 @@ import socialLinks from './custom/socialLinks';
 import submissions from './custom/submissions';
 import rotatingText from './custom/rotatingText';
 import imageReveal from './custom/image-reveal';
+import heroStart from './custom/heroStart';
 
 $(() => {
   customCursor();
@@ -25,4 +26,5 @@ $(() => {
   submissions();
   rotatingText();
   imageReveal();
+  heroStart();
 });
