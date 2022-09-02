@@ -92,7 +92,8 @@ header.banner {
       transition: all 0.4s ease-in;
 
       &:hover {
-        color: map-get($theme-colors, 'creme-white');
+        color: map-get($theme-colors, 'blackish');
+        background-color: map-get($theme-colors, 'creme-white');
       }
 
       &-number {
@@ -106,12 +107,12 @@ header.banner {
       }
       &-name {
         letter-spacing: 5px;
-        font-family: $oswald-bold;
-        transition: all 0.4s ease-in;
+        font-family: $lekton-regular;
+        font-size: 24px;
 
-        &:hover {
-          letter-spacing: 7px;
-        }
+        // &:hover {
+        //   letter-spacing: 7px;
+        // }
         @include media-breakpoint-up(lg) {
           width: 25%;
         }
