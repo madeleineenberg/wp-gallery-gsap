@@ -29,6 +29,7 @@
         <p class="title">{{ $hero_title }}</p>
     </div>
     <div class="hero-container">
-        <a href="#image-reveal" data-scroll-to class="projects">{{ $link }}</a>
+        <a href="#image-reveal" data-scroll-to class="projects">{{ $link }} <ion-icon
+                name="play-forward-circle-outline"></ion-icon></a>
     </div>
 </div>
