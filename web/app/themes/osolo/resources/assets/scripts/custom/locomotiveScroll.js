@@ -23,6 +23,11 @@ export default function () {
       },
     });
 
+    //scroll to target on ninja form submit
+    $(document).on('nfFormSubmitResponse', function () {
+      scroll.scrollTo('#note-board');
+    });
+
     //update scroll when images are loaded
 
     imagesLoaded(scrollContainer, { background: '.item' }, function () {

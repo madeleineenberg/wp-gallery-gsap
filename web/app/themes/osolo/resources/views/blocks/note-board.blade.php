@@ -12,7 +12,7 @@
   SupportsMultiple: true
 / --}}
 
-<div class="c-note-board" id="note-board">
+<div class="c-note-board"  id="note-board">
     @if ($label)
         <div class="c-note-board__text">
             <p>{{ $label }}</p>
