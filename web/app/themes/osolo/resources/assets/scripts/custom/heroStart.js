@@ -2,11 +2,13 @@ import anime from 'animejs/lib/anime.es.js';
 import { TweenMax, Expo } from 'gsap/gsap-core';
 
 export default function () {
-  let textWrapper = document.querySelector('.title');
-  textWrapper.innerHTML = textWrapper.textContent.replace(
-    /\S/g,
-    "<span class='letter'>$&</span>",
-  );
+  if (document.querySelector('.title')) {
+    let textWrapper = document.querySelector('.title');
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>",
+    );
+  }
 
   anime.timeline().add({
     targets: '.title .letter',
@@ -23,7 +25,7 @@ export default function () {
     delay: 1,
   });
 
-  TweenMax.from('img', 4, {
+  TweenMax.from('.hero-image', 4, {
     scale: '2',
     ease: Expo.easeInOut,
     delay: 0,
@@ -42,14 +44,14 @@ export default function () {
     delay: 3.4,
   });
 
-  TweenMax.to('.left', 2, {
+  TweenMax.to('.left-hero-img', 2, {
     x: '-200',
     rotation: -10,
     ease: Expo.easeInOut,
     delay: 3.8,
   });
 
-  TweenMax.to('.right', 2, {
+  TweenMax.to('.right-hero-img', 2, {
     x: '200',
     rotation: 10,
     ease: Expo.easeInOut,

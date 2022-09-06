@@ -14,8 +14,8 @@
 
 <div class="c-start-hero">
     <div class="images" data-scroll data-scroll-speed="-1">
-        <div class="left img" style="background: url('{{ $left_image }}')"></div>
-        <div class="right img" style="background: url('{{ $right_image }}')"></div>
+        <div class="left-hero-img img" style="background: url('{{ $left_image }}')"></div>
+        <div class="right-hero-img img" style="background: url('{{ $right_image }}')"></div>
     </div>
     <div class="hero-image-container">
         <div class="wrapper-img" data-scroll data-scroll-speed="2">
