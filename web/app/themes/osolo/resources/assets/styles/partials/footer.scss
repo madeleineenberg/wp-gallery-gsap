@@ -35,5 +35,9 @@
     display: flex;
     justify-content: end;
     margin-right: 30px;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 15px;
+    }
   }
 }

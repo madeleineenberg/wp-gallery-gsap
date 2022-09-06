@@ -30,6 +30,6 @@
     </div>
     <div class="c-page-footer__inner-bottom-section">
         <p>{{ $credits }}</p>
-        <p>All images &copy; {{ date('Y') }} Madeleine Enberg</p>
+        <p class="c-page-footer__inner-bottom-section-copy">All images &copy; {{ date('Y') }} Madeleine Enberg</p>
     </div>
 </div>
