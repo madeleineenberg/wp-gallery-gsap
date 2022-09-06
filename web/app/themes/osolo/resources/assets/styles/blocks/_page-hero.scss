@@ -19,6 +19,7 @@
   &_image-wrapper {
     aspect-ratio: 3 /4;
     max-width: 700px;
+    // height: auto;
 
     img {
       object-fit: cover;
@@ -35,14 +36,11 @@
 
   &__title {
     font-family: $oswald-bold;
-
-    // font-family: $lekton-regular;
     font-size: 8vw;
     position: absolute;
     top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
-    // text-transform: uppercase;
     letter-spacing: 5px;
 
     @include media-breakpoint-down(md) {

@@ -6,6 +6,13 @@
 
   &__heading {
     @extend .c-note-board__heading;
+
+    @include media-breakpoint-down(md) {
+      .subtitle_line .word {
+        margin-left: 0 !important;
+        margin-right: 15px;
+      }
+    }
   }
 
   &__text {
