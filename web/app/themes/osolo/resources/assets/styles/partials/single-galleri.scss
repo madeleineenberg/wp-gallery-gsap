@@ -1,7 +1,7 @@
 .gallery-container {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
 
   @include media-breakpoint-down(md) {
     display: none;

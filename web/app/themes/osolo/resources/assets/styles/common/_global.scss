@@ -32,6 +32,10 @@ body {
     background-color: map-get($theme-colors, 'black');
     color: map-get($theme-colors, 'creme-white');
   }
+
+  &.single-galleri {
+    overflow: hidden;
+  }
 }
 
 a {

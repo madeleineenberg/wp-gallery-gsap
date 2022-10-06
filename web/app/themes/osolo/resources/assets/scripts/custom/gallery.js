@@ -72,9 +72,9 @@ export default function () {
         maxHeight: randomNumberHeight + '%',
       });
       image.appendTo(container);
-      TweenMax.to($('.image'), 10, {
-        css: { scaleX: 1.1, scaleY: 1.1 },
-      });
+      // TweenMax.to($('.image'), 10, {
+      //   css: { scaleX: 1.1, scaleY: 1.1 },
+      // });
       checkImage();
     }
 
