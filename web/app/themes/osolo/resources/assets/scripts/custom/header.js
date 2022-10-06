@@ -48,18 +48,18 @@ export default function () {
       },
       y: 100,
     },
-    '-=1.5',
+    '-=1.3',
   );
   tl.from(
     '.menu-item-name',
     {
       duration: 1,
       stagger: {
-        amount: 1.5,
+        amount: 0.5,
       },
       y: 100,
     },
-    '-=1.6',
+    '-=1.2',
   );
   tl.from(
     '.menu-item-sub',
