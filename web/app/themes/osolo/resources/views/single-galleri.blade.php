@@ -3,11 +3,54 @@
 
 @section('content')
     <div class="gallery-container">
-        <h1 id="gallery-title" class="gallery-title" data-id="{{ get_the_ID() }}">{!! get_the_title() !!}</h1>
+        <div>
+            <h1 id="gallery-title" class="gallery-title" data-id="{{ get_the_ID() }}">{!! get_the_title() !!}</h1>
+        </div>
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span class="item-collection-1">
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                </span>
+                <span class="item-collection-2">
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                </span>
+            </div>
+        </div>
+        <div class="ticker-wrap two">
+            <div class="ticker">
+                <span class="item-collection-1">
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                </span>
+                <span class="item-collection-2">
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                    <span class="item">Scroll - to create gallery </span>
+                </span>
+            </div>
+        </div>
     </div>
 
     <div class="gallery-container--mobile">
         <h1 id="gallery-title" class="gallery-title" data-id="{{ get_the_ID() }}">{!! get_the_title() !!}</h1>
+
         <ul class="gallery-list">
             @foreach ($images as $image)
                 <li class="gallery-list__item">

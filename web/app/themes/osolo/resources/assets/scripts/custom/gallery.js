@@ -41,6 +41,7 @@ export default function () {
       $(document).off('mousewheel DOMMouseScroll');
       setTimeout(function () {
         $(document).on('mousewheel DOMMouseScroll', function (e) {
+          $('.ticker-wrap').addClass('hide');
           if (e.originalEvent.wheelDelta > 0) {
             insertImage($images, $container);
             $count++;
@@ -118,6 +119,7 @@ export default function () {
       let mouseX = e.pageX;
       let mouseY = e.pageY;
       wrap(mouseX, mouseY);
+      $('.ticker-wrap').removeClass('hide');
     });
   }
 
