@@ -2,11 +2,17 @@
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
-  height: 1000px;
+  height: 100%;
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+    // height: 100vh;
+  }
 
   &__text-wrapper {
     padding: 5%;
     position: relative;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
 
     &-headline {
       @extend .c-note-board__heading;
@@ -17,18 +23,23 @@
       }
 
       &-wrapper {
-        height: 700px;
+        // height: 700px;
       }
     }
 
     &.left {
       grid-column: 2;
       grid-row: 1;
+
+      @include media-breakpoint-down(md) {
+        grid-column: 1;
+        grid-row: auto;
+      }
     }
 
     &-text {
-      position: absolute;
-      bottom: 0;
+      // position: relative;
+      // bottom: 0;
       margin: 0 20px;
       padding: 5% 0;
 
@@ -41,7 +52,8 @@
 
   &__image-wrapper {
     overflow: hidden;
-    height: 1000px;
+    height: 100%;
+
     img {
       width: 100%;
       height: 120%;
@@ -49,9 +61,17 @@
       transform: scale(1);
     }
 
+    @include media-breakpoint-down(md) {
+      // height: 100vh;
+    }
+
     &.left {
       grid-column: 1;
       grid-row: 1;
+
+      @include media-breakpoint-down(md) {
+        grid-row: auto;
+      }
     }
   }
 }

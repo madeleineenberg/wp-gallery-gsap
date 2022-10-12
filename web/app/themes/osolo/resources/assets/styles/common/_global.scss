@@ -33,8 +33,10 @@ body {
     color: map-get($theme-colors, 'creme-white');
   }
 
-  &.single-galleri {
-    overflow: hidden;
+  @include media-breakpoint-up(md) {
+    &.single-galleri {
+      overflow: hidden;
+    }
   }
 }
 
