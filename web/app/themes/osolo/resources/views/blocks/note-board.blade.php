@@ -20,7 +20,7 @@
         </div>
     @endif
     <h2 class="c-note-board__heading" data-scroll data-scroll-repeat>{{ $heading }}</h2>
-
+<div class="c-note-board__grid-wrapper">
     <div class="c-note-board__grid" data-scroll>
     </div>
     <div class="c-note-board__ninjaform">
@@ -28,4 +28,5 @@
             {!! do_shortcode('[ninja_form id="' . $id . '"]') !!}
         @endif
     </div>
+</div>
 </div>

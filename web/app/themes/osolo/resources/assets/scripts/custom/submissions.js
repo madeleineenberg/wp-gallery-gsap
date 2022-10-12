@@ -18,9 +18,9 @@ export default function () {
                   '<div class="c-note-board__grid-item empty-note"></div>',
                 );
               }
-              if (index % 3 === 0) {
+              if (index % 6 === 0) {
                 $(elem).after(
-                  '<div class="c-note-board__grid-item empty-note-color" data-scroll data-scroll-speed="-2"><div class="container"></div><div class="eye-box"><div class="eye"></div><div class="eye"></div></div></div>',
+                  '<div class="c-note-board__grid-item empty-note-color" data-scroll data-scroll-speed="-2"><div class="ghost"><div class="container"></div><div class="eye-box"><div class="eye"></div><div class="eye"></div></div></div></div>',
                 );
               }
             });
@@ -35,7 +35,7 @@ export default function () {
     $(document).on('mousemove', function (event) {
       let eye = $('.eye');
 
-      if (eye) {
+      if (eye.length > 0) {
         let x = eye.offset().left + eye.width() / 2;
         let y = eye.offset().top + eye.height() / 2;
         let rad = Math.atan2(event.pageX - x, event.pageY - y);

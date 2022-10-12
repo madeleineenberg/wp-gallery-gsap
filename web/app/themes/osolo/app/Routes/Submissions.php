@@ -12,7 +12,7 @@ if ( is_array( $submissions ) && count( $submissions ) > 0 ) {
 		$values[] = $submission->get_field_values();
     }
 	
-	$notes = array_slice($values, 0, 20);
+	$notes = array_slice($values, 0, 14);
 	foreach($notes as $note){
 		$html .= \Roots\view('partials.note-list-item', [
 		'name' => $note['name'],
