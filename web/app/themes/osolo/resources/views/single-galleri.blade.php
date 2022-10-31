@@ -9,40 +9,28 @@
         <div class="ticker-wrap">
             <div class="ticker">
                 <span class="item-collection-1">
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
+                    @for ($i = 0; $i < 6; $i++)
+                        <span class="item">Scroll - to create gallery </span>
+                    @endfor
                 </span>
                 <span class="item-collection-2">
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
+                    @for ($i = 0; $i < 6; $i++)
+                        <span class="item">Scroll - to create gallery </span>
+                    @endfor
                 </span>
             </div>
         </div>
         <div class="ticker-wrap two">
             <div class="ticker">
                 <span class="item-collection-1">
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
+                    @for ($i = 0; $i < 6; $i++)
+                        <span class="item">Scroll - to create gallery </span>
+                    @endfor
                 </span>
                 <span class="item-collection-2">
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
-                    <span class="item">Scroll - to create gallery </span>
+                    @for ($i = 0; $i < 6; $i++)
+                        <span class="item">Scroll - to create gallery </span>
+                    @endfor
                 </span>
             </div>
         </div>
