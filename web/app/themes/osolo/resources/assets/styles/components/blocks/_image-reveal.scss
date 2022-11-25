@@ -1,10 +1,14 @@
-@include media-breakpoint-down(md) {
+@use 'sass:map';
+@use '../../abstracts';
+@use '../../vendors/bootstrap';
+
+@include bootstrap.media-breakpoint-down(md) {
   .c-image-reveal {
     display: none;
   }
 }
 
-@include media-breakpoint-up(md) {
+@include bootstrap.media-breakpoint-up(md) {
   .c-image-reveal {
     padding: 20% 0;
     display: grid;
@@ -31,7 +35,7 @@
         border-radius: 15px;
         transform-origin: left;
         overflow: hidden;
-        background-color: map-get($theme-colors, 'black');
+        background-color: map-get(abstracts.$theme-colors, 'black');
         transition: all 3s ease;
         filter: blur(5px);
         z-index: -1;
@@ -109,13 +113,13 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+@include bootstrap.media-breakpoint-up(md) {
   .c-image-reveal__mobile {
     display: none;
   }
 }
 
-@include media-breakpoint-down(md) {
+@include bootstrap.media-breakpoint-down(md) {
   .c-image-reveal__mobile {
     padding: 10% 0;
     &__list {
@@ -132,13 +136,13 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 25vw;
-      color: map-get($theme-colors, 'pink');
+      color: map-get(abstracts.$theme-colors, 'pink');
       z-index: 10;
       mix-blend-mode: difference;
     }
 
     &-subtitle {
-      font-family: $lekton-regular;
+      font-family: abstracts.$lekton-regular;
       font-size: 24px;
       padding-top: 20px;
       float: right;

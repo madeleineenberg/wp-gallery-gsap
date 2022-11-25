@@ -1,3 +1,7 @@
+@use 'sass:map';
+@use '../abstracts';
+@use '../vendors/bootstrap';
+
 header.banner {
   position: fixed;
   display: flex;
@@ -14,12 +18,12 @@ header.banner {
     font-size: 25px;
     margin-left: 30px;
     line-height: 35px;
-    font-family: $oswald-extra-light;
-    color: map-get($theme-colors, 'pink');
+    font-family: abstracts.$oswald-extra-light;
+    color: map-get(abstracts.$theme-colors, 'pink');
     letter-spacing: 3px;
     transition: all 0.4s linear;
 
-    @include media-breakpoint-down(md) {
+    @include bootstrap.media-breakpoint-down(md) {
       margin-left: 15px;
     }
   }
@@ -31,11 +35,11 @@ header.banner {
 
     ion-icon {
       font-size: 25px;
-      color: map-get($theme-colors, 'pink');
+      color: map-get(abstracts.$theme-colors, 'pink');
       cursor: pointer;
     }
 
-    @include media-breakpoint-down(md) {
+    @include bootstrap.media-breakpoint-down(md) {
       margin-right: 15px;
     }
   }
@@ -61,10 +65,10 @@ header.banner {
 
     ion-icon {
       font-size: 25px;
-      color: map-get($theme-colors, 'creme-white');
+      color: map-get(abstracts.$theme-colors, 'creme-white');
     }
 
-    @include media-breakpoint-down(md) {
+    @include bootstrap.media-breakpoint-down(md) {
       right: 15px;
     }
   }
@@ -84,7 +88,7 @@ header.banner {
       margin-left: 10%;
       margin-right: 20%;
 
-      @include media-breakpoint-up(lg) {
+      @include bootstrap.media-breakpoint-up(lg) {
         width: 70%;
       }
     }
@@ -100,32 +104,32 @@ header.banner {
       overflow: hidden;
       cursor: pointer;
       // color: rgba(255, 255, 255, 0.4);
-      color: map-get($theme-colors, 'creme-white');
+      color: map-get(abstracts.$theme-colors, 'creme-white');
       transition: all 0.4s ease-in;
 
       &:hover {
-        color: map-get($theme-colors, 'blackish');
-        background-color: map-get($theme-colors, 'creme-white');
+        color: map-get(abstracts.$theme-colors, 'blackish');
+        background-color: map-get(abstracts.$theme-colors, 'creme-white');
       }
 
       &-number {
         padding: 0px 20px;
         font-size: 15px;
-        font-family: $lekton-regular;
+        font-family: abstracts.$lekton-regular;
 
-        @include media-breakpoint-up(lg) {
+        @include bootstrap.media-breakpoint-up(lg) {
           width: 15%;
         }
       }
       &-name {
         letter-spacing: 5px;
-        font-family: $lekton-regular;
+        font-family: abstracts.$lekton-regular;
         font-size: 24px;
 
         // &:hover {
         //   letter-spacing: 7px;
         // }
-        @include media-breakpoint-up(lg) {
+        @include bootstrap.media-breakpoint-up(lg) {
           width: 25%;
         }
       }
@@ -134,9 +138,9 @@ header.banner {
         width: 35%;
         font-size: 15px;
         padding: 25px 0px;
-        font-family: $lekton-regular;
+        font-family: abstracts.$lekton-regular;
 
-        @include media-breakpoint-down(lg) {
+        @include bootstrap.media-breakpoint-down(lg) {
           display: none;
         }
       }

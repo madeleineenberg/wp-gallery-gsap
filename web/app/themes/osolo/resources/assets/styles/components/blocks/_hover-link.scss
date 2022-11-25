@@ -1,3 +1,7 @@
+@use 'sass:map';
+@use '../../abstracts';
+@use '../../vendors/bootstrap';
+
 .navigation-wrapper ul {
   margin-top: 240px;
   margin-left: 100px;
@@ -5,7 +9,7 @@
   list-style: none;
   position: absolute;
 
-  @include media-breakpoint-down(md) {
+  @include bootstrap.media-breakpoint-down(md) {
     margin-left: 0;
     padding: 5%;
     margin-top: 100px;
@@ -18,7 +22,7 @@
   user-select: none;
   margin: 100px 0 200px 0;
   overflow: hidden;
-  @include media-breakpoint-up(md) {
+  @include bootstrap.media-breakpoint-up(md) {
     margin: 300px 0;
     img {
       display: none;
@@ -37,7 +41,7 @@
 }
 
 a {
-  font-family: $oswald-bold;
+  font-family: abstracts.$oswald-bold;
   font-size: 8vw;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.2);
@@ -53,18 +57,18 @@ a {
   position: relative;
   display: block;
 
-  @include media-breakpoint-down(md) {
+  @include bootstrap.media-breakpoint-down(md) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25vw;
-    color: map-get($theme-colors, 'pink');
+    color: map-get(abstracts.$theme-colors, 'pink');
     z-index: 10;
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include bootstrap.media-breakpoint-up(lg) {
   .navigation-item span:before {
     width: 0;
     overflow: hidden;
@@ -91,7 +95,7 @@ a {
   display: flex;
   justify-content: center;
 
-  @include media-breakpoint-down(md) {
+  @include bootstrap.media-breakpoint-down(md) {
     display: none;
   }
 }

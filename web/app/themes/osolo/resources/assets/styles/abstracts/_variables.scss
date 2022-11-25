@@ -8,7 +8,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px,
-);
+) !default;
 
 $theme-colors: (
   'primary': #0d6efd,
@@ -26,7 +26,7 @@ $theme-colors: (
   'blackish': #232025,
   'black': #000,
   'purple': #cbb0f6,
-);
+) !default;
 
 $oswald-extra-light: 'Oswald Extra Light', sans-serif;
 $oswald-light: 'Oswald Light', sans-serif;

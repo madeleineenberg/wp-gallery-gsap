@@ -2,15 +2,20 @@
  * Editor
  */
 
-@import 'config/variables';
 
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'vendors';
 
 .editor-styles-wrapper > * {
-  @import 'common/global';
-  @import 'components';
+  font-family: abstracts.$lekton-regular;
 
-  font-family: $font-family-base;
+   .wp-block {
+    max-width: none !important;
+  }
+
+  .wp-block-paragraph {
+    width: 100%;
+  }
 }

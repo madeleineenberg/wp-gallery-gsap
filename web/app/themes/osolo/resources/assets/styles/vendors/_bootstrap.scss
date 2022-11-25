@@ -1,0 +1,6 @@
+@use '../abstracts/variables';
+
+@forward '~bootstrap/scss/bootstrap' with (
+    $container-max-widths: variables.$container-max-widths,
+    $theme-colors: variables.$theme-colors
+);

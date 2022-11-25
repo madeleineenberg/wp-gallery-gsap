@@ -1,31 +1,5 @@
-/** Config */
-@import 'config/variables';
-@import 'config/external';
-@import 'config/locomotive-scroll';
-
-/** Common */
-@import 'common/global';
-@import 'common/fonts';
-@import 'common/button';
-@import 'common/link';
-
-/** Components */
-@import 'components';
-
-/** Blocks */
-
-@import 'blocks/hover-link';
-@import 'blocks/page-hero';
-@import 'blocks/text-block';
-@import 'blocks/social';
-@import 'blocks/note-board';
-@import 'blocks/sticky-image-text';
-@import 'blocks/page-footer';
-@import 'blocks/image-reveal';
-@import 'blocks/hero-start';
-@import 'blocks/horizontal-text';
-@import 'blocks/image';
-
-@import 'partials/single-galleri.scss';
-@import 'partials/header.scss';
-@import 'partials/footer.scss';
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'pages';
+@use 'vendors'

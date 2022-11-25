@@ -1,15 +1,20 @@
+@use 'sass:map';
+@use '../abstracts';
+@use '../vendors/bootstrap';
+
+
 /**
- * Button
+ *  Core Button
  */
 
 .wp-block-button {
   &__link {
-    font-size: $btn-font-size;
-    line-height: $btn-line-height;
-    padding-bottom: $btn-padding-y;
-    padding-left: $btn-padding-x;
-    padding-right: $btn-padding-x;
-    padding-top: $btn-padding-y;
+    font-size: bootstrap.$btn-font-size;
+    line-height: bootstrap.$btn-line-height;
+    padding-bottom: bootstrap.$btn-padding-y;
+    padding-left: bootstrap.$btn-padding-x;
+    padding-right: bootstrap.$btn-padding-x;
+    padding-top: bootstrap.$btn-padding-y;
 
     &:hover {
       text-decoration: none;
@@ -18,18 +23,18 @@
 
   &.is-style-outline {
     .wp-block-button__link {
-      @include button-outline-variant(
-        map-get($theme-colors, 'primary'),
-        map-get($theme-colors, 'light')
+      @include bootstrap.button-outline-variant(
+        map-get(abstracts.$theme-colors, 'primary'),
+        map-get(abstracts.$theme-colors, 'light')
       );
     }
   }
 
   &.is-style-solid {
     .wp-block-button__link {
-      @include button-variant(
-        map-get($theme-colors, 'primary'),
-        map-get($theme-colors, 'light')
+      @include bootstrap.button-variant(
+        map-get(abstracts.$theme-colors, 'primary'),
+        map-get(abstracts.$theme-colors, 'light')
       );
     }
   }

@@ -1,3 +1,7 @@
+@use 'sass:map';
+@use '../../abstracts';
+@use '../../vendors/bootstrap';
+
 .c-text-block {
   padding: 0 10%;
   max-width: 1400px;
@@ -5,9 +9,9 @@
   position: relative;
 
   &__heading {
-    @extend .c-note-board__heading;
+    @extend %perspective-heading;
 
-    @include media-breakpoint-down(md) {
+    @include bootstrap.media-breakpoint-down(md) {
       .subtitle_line .word {
         margin-left: 0 !important;
         margin-right: 15px;
@@ -16,7 +20,7 @@
   }
 
   &__text {
-    font-family: $lekton-regular;
+    font-family: abstracts.$lekton-regular;
     font-size: 2vw;
     max-width: 700px;
     opacity: 0;
@@ -35,7 +39,7 @@
       position: relative;
     }
 
-    @include media-breakpoint-down(lg) {
+    @include bootstrap.media-breakpoint-down(lg) {
       font-size: 26px;
       margin-top: 15px;
     }
@@ -53,7 +57,7 @@
     border-radius: 15px;
     transform-origin: left;
     overflow: hidden;
-    background-color: map-get($theme-colors, 'pink');
+    background-color: map-get(abstracts.$theme-colors, 'pink');
     transition: all 3s ease;
     filter: blur(5px);
 

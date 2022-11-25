@@ -1,9 +1,14 @@
+@use "sass:map";
+@use '../vendors/bootstrap';
+@use '../abstracts';
+
+
 /**
  * Global
  */
 
 a {
-  color: map-get($theme-colors, 'primary');
+  color: map-get(abstracts.$theme-colors, 'primary');
 }
 
 /**
@@ -11,29 +16,29 @@ a {
  * @see https://git.io/JeyD6
  */
 
-@each $color-name, $color-value in $theme-colors {
-  .has-#{$color-name}-color {
-    color: $color-value;
-  }
+// @each $color-name, $color-value in abstracts.$theme-colors {
+//   .has-#{$color-name}-color {
+//     color: $color-value;
+//   }
 
-  .has-#{$color-name}-background-color {
-    background-color: $color-value;
-  }
-}
+//   .has-#{$color-name}-background-color {
+//     background-color: $color-value;
+//   }
+// }
 
 body {
-  background-color: map-get($theme-colors, 'creme-white');
-  color: map-get($theme-colors, 'black');
+  background-color: map-get(abstracts.$theme-colors, 'creme-white');
+  color: map-get(abstracts.$theme-colors, 'black');
   overflow-x: hidden;
-  background-image: $texture;
+  background-image: abstracts.$texture;
 
   &.home,
   &.single-galleri {
-    background-color: map-get($theme-colors, 'black');
-    color: map-get($theme-colors, 'creme-white');
+    background-color: map-get(abstracts.$theme-colors, 'black');
+    color: map-get(abstracts.$theme-colors, 'creme-white');
   }
 
-  @include media-breakpoint-up(md) {
+  @include bootstrap.media-breakpoint-up(md) {
     &.single-galleri {
       overflow: hidden;
     }
@@ -41,16 +46,16 @@ body {
 }
 
 a {
-  color: map-get($theme-colors, 'creme-white');
+  color: map-get(abstracts.$theme-colors, 'creme-white');
 
   &:hover {
-    color: map-get($theme-colors, 'creme-white');
+    color: map-get(abstracts.$theme-colors, 'creme-white');
   }
 }
 
 //custom cursor styling
 
-@include media-breakpoint-up(md) {
+@include bootstrap.media-breakpoint-up(md) {
   [data-cursor] {
     width: 20px;
     height: 20px;
@@ -63,7 +68,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid map-get($theme-colors, 'pink');
+    border: 1px solid map-get(abstracts.$theme-colors, 'pink');
     transition: all 0.4s ease;
   }
 
@@ -85,7 +90,7 @@ a {
       width: 65px;
       height: 65px;
       border-radius: 50%;
-      border: 1px solid map-get($theme-colors, 'pink');
+      border: 1px solid map-get(abstracts.$theme-colors, 'pink');
       mix-blend-mode: difference;
     }
   }
@@ -107,7 +112,7 @@ a {
 
       &::after {
         content: 'SCROLL';
-        color: map-get($theme-colors, 'creme-white');
+        color: map-get(abstracts.$theme-colors, 'creme-white');
         letter-spacing: 2px;
         position: absolute;
         top: 50%;
