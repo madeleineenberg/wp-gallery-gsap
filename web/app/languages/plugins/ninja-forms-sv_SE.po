@@ -2,14 +2,22 @@
 # This file is distributed under the same license as the Plugins - Ninja Forms Contact Form &#8211; The Drag and Drop Form Builder for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-18 12:13:04+0000\n"
+"PO-Revision-Date: 2022-09-27 06:02:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Ninja Forms Contact Form &#8211; The Drag and Drop Form Builder for WordPress - Stable (latest release)\n"
+
+#: includes/Routes/Submissions.php:504
+msgid "This request is missing data for method delete_download_file"
+msgstr "Denna begäran saknar data för metoden delete_download_file"
+
+#: includes/Routes/Submissions.php:169
+msgid "File path of the file to delete"
+msgstr "Filsökväg för filen som ska tas bort"
 
 #: includes/Admin/Processes/DeleteBatchFile.php:32
 msgid "File could not be deleted"
@@ -35,9 +43,17 @@ msgstr "Uppdatera enskild inlämning"
 msgid "Record Submission"
 msgstr "Lagra inlämning"
 
+#: includes/Routes/Submissions.php:196
+msgid "Form ID of the setting saved"
+msgstr "Formulär-ID och inställning sparad"
+
 #: includes/Routes/Submissions.php:190
 msgid "Settings data"
 msgstr "Inställningsdata"
+
+#: includes/Config/PluginSettingsAdvanced.php:60
+msgid "Show Legacy Submissions Page"
+msgstr "Visa äldre inlämningssida"
 
 #: includes/Admin/Metaboxes/CalculationsReact.php:97
 msgid " - Parsed"
@@ -72,6 +88,10 @@ msgstr "Hemlig nyckel för reCAPTCHA v2"
 msgid "reCAPTCHA v2 Site Key"
 msgstr "Webbplatsnyckel för reCAPTCHA v2"
 
+#: includes/Actions/Recaptcha.php:366 includes/Actions/Recaptcha.php:375
+msgid "Recaptcha validation failed. Please try again later"
+msgstr "Recaptcha-validering misslyckades, försök igen senare"
+
 #: includes/Actions/Recaptcha.php:63
 msgid "reCAPTCHA v3"
 msgstr "reCAPTCHA v3"
@@ -79,6 +99,11 @@ msgstr "reCAPTCHA v3"
 #: includes/Admin/Menus/Submissions.php:101 build/submissions.js:1
 msgid "Trigger Email Action"
 msgstr "Utlös e-poståtgärd"
+
+#: includes/Routes/Submissions.php:398 includes/Routes/Submissions.php:464
+#: includes/Routes/Submissions.php:526 includes/Routes/Submissions.php:592
+msgid "This request is missing data"
+msgstr "Denna begäran saknar data"
 
 #: includes/Routes/Submissions.php:222
 msgid "Email Action Settings"
@@ -724,6 +749,14 @@ msgstr "Spara ingen"
 msgid "Save All"
 msgstr "Spara alla"
 
+#: includes/Config/ActionExportDataRequestSettings.php:11
+msgid "This action adds users to WordPress' personal data export tool, allowing admins to comply with the GDPR and other privacy regulations from the site's front end."
+msgstr "Den här åtgärden lägger till användare till WordPress verktyg för export av personuppgifter, vilket gör att administratörer kan följa GDPR och andra integritetsbestämmelser."
+
+#: includes/Config/ActionDeleteDataRequestSettings.php:11
+msgid "This action adds users to WordPress' personal data delete tool, allowing admins to comply with the GDPR and other privacy regulations from the site's front end."
+msgstr "Denna åtgärd lägger till användare till WordPress verktyg för borttagning av personuppgifter, vilket gör att administratörer kan följa GDPR och andra integritetsbestämmelser."
+
 #: includes/Config/ActionDeleteDataRequestSettings.php:10
 #: includes/Config/ActionExportDataRequestSettings.php:10
 msgid "This is a message"
@@ -1201,7 +1234,7 @@ msgstr "Fält matchar inte."
 
 #: includes/Config/MergeTagsWP.php:183
 msgid "User Meta"
-msgstr "Användarmeta"
+msgstr "Metadata för användare"
 
 #: includes/Config/MergeTagsOther.php:38
 msgid "Time"
@@ -1325,7 +1358,7 @@ msgstr "Så enkelt är det."
 
 #: includes/Templates/admin-menu-dashboard.html.php:234
 msgid "Loading Forms"
-msgstr "Laddar formulär"
+msgstr "Laddar in formulär"
 
 #: includes/Templates/admin-menu-dashboard.html.php:231
 msgid "No Forms"
@@ -1341,7 +1374,7 @@ msgstr "Fler"
 
 #: includes/Templates/admin-menu-dashboard.html.php:186
 msgid "Loading Forms..."
-msgstr "Laddar formulär..."
+msgstr "Laddar in formulär …"
 
 #: includes/Templates/admin-menu-dashboard.html.php:180
 msgid "Title"
@@ -1381,12 +1414,17 @@ msgstr "Metadata för inlägg"
 
 #: includes/Config/MergeTagsOther.php:51
 msgid "User IP Address"
-msgstr "Användar IP-adress"
+msgstr "IP-adress för användare"
 
 #: includes/Config/MergeTagsFieldsAJAX.php:16
 #: includes/Config/MergeTagsForm.php:74
 msgid "Fields Table"
 msgstr "Fälttabell"
+
+#: includes/Config/MergeTagsFieldsAJAX.php:8
+#: includes/Config/MergeTagsForm.php:67
+msgid "All Fields Table"
+msgstr "Tabell med alla fält"
 
 #: includes/Config/MergeTagsDeprecated.php:118
 #: includes/Config/MergeTagsWP.php:131
@@ -1409,7 +1447,7 @@ msgstr "Precision"
 
 #: includes/Config/DashboardMenuItems.php:15
 msgid "Apps & Integrations"
-msgstr "Appar och integreringar"
+msgstr "Appar och integrationer"
 
 #: includes/Admin/Menus/Dashboard.php:23
 msgid "Dashboard"
@@ -1418,6 +1456,10 @@ msgstr "Adminpanel"
 #: includes/Admin/AllFormsTable.php:101
 msgid "date"
 msgstr "datum"
+
+#: includes/AJAX/REST/NewFormTemplates.php:31
+msgid "The blank form allows you to create any type of form using our drag & drop builder."
+msgstr "Tomt formulär låter dig skapa vilken typ av formulär som helst med vår ”dra och släpp”-byggare."
 
 #: includes/AJAX/REST/NewFormTemplates.php:30
 msgid "Blank Form"
@@ -1461,7 +1503,7 @@ msgstr "Skapad"
 
 #: includes/Actions/Custom.php:35
 msgid "WP Hook"
-msgstr "WP åtgärdshook"
+msgstr "WP åtgärds-hook"
 
 #: includes/Templates/admin-menu-new-form.html.php:535
 msgid "Label, Value, Calc Value"
@@ -1470,6 +1512,10 @@ msgstr "Etikett, värde, beräknat värde"
 #: includes/Templates/admin-menu-new-form.html.php:532
 msgid "Please use the following format"
 msgstr "Använd följande format"
+
+#: includes/Admin/AllFormsTable.php:40
+msgid "Really Delete This Form? This will remove all fields and submission data. Recovery is not possible."
+msgstr "Vill du verkligen ta bort detta formulär? Detta tar bort alla fält och inlämningsdata. Återhämtning är inte möjlig."
 
 #: includes/Integrations/EDD/EDD_SL_Plugin_Updater.php:227
 msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
@@ -1761,7 +1807,7 @@ msgstr "Inte än"
 
 #: includes/Templates/admin-menu-new-form.html.php:476
 msgid "Almost there..."
-msgstr "Nästan där..."
+msgstr "Nästan där …"
 
 #: includes/Templates/admin-menu-new-form.html.php:462
 msgid " Undo All"
@@ -1834,7 +1880,7 @@ msgstr "Visa ändringar"
 
 #: includes/Templates/admin-menu-new-form.html.php:157
 msgid "Loading"
-msgstr "Laddar"
+msgstr "Laddar in"
 
 #: includes/Templates/admin-menu-new-form.html.php:153
 msgid "PUBLISH"
@@ -1963,6 +2009,10 @@ msgstr "Min första beräkning"
 msgid "Form with Calculations"
 msgstr "Formulär med beräkningar"
 
+#: includes/Database/MockData.php:1121
+msgid "of Product B for $"
+msgstr "av produkt B för $"
+
 #: includes/Database/MockData.php:1120
 msgid "of Product A and "
 msgstr "av produkt A och "
@@ -2004,6 +2054,10 @@ msgstr "Du köpte "
 #: includes/Database/MockData.php:1107 includes/Database/MockData.php:1150
 msgid "Purchase"
 msgstr "Köp"
+
+#: includes/Database/MockData.php:888
+msgid "Product Form (with Quantity Field)"
+msgstr "Produktformulär (med fält för antal)"
 
 #: includes/Database/MockData.php:876
 msgid "Subscribe"
@@ -2176,6 +2230,10 @@ msgstr "Tomma formulär"
 #: includes/Database/MockData.php:28
 msgid "Baz"
 msgstr "Baz"
+
+#: includes/Database/MockData.php:21
+msgid "Bar"
+msgstr "Bar"
 
 #: includes/Database/MockData.php:14
 msgid "Foo"
@@ -2492,7 +2550,7 @@ msgstr "Bekräfta lösenord"
 
 #: includes/Fields/Note.php:47
 msgid "Note"
-msgstr "Notis"
+msgstr "Observera"
 
 #: includes/Fields/ListSelect.php:26
 msgid "Select"
@@ -2553,7 +2611,7 @@ msgstr "markerad"
 #: includes/Templates/admin-menu-forms.html.php:163
 #: includes/Templates/admin-menu-forms.html.php:191
 msgid "Button"
-msgstr "﻿Knapp"
+msgstr "Knapp"
 
 #: includes/Fields/Address2.php:23
 msgid "Address 2"
@@ -2804,7 +2862,7 @@ msgstr "Användar-ID"
 
 #: includes/Config/MergeTagsDeprecated.php:196
 msgid "IP Address"
-msgstr "IP-address"
+msgstr "IP-adress"
 
 #: includes/Config/MergeTagsDeprecated.php:40
 #: includes/Config/MergeTagsWP.php:40
@@ -3172,7 +3230,7 @@ msgstr "Ta betalt"
 
 #: includes/Abstracts/UserInfo.php:37
 msgid "User Meta (if logged in)"
-msgstr "Användarmeta (om inloggad)"
+msgstr "Metadata för användare (om inloggad)"
 
 #: includes/Abstracts/SubmissionMetabox.php:21
 msgid "Submission Metabox"
@@ -3196,7 +3254,7 @@ msgstr "Flera"
 
 #: includes/Abstracts/FieldOptIn.php:39
 msgid "Single"
-msgstr "Singel"
+msgstr "Enskild"
 
 #: includes/Abstracts/ActionNewsletter.php:158
 msgid "Interest Groups"
@@ -4399,11 +4457,11 @@ msgstr "E-postadress för administration"
 
 #: lib/StepProcessing/menu.php:110
 msgid "No Action Specified..."
-msgstr "Ingen åtgärd specificerad…"
+msgstr "Ingen åtgärd specificerad …"
 
 #: lib/StepProcessing/menu.php:105
 msgid "Loading..."
-msgstr "Laddar…"
+msgstr "Laddar in …"
 
 #: lib/StepProcessing/menu.php:72
 msgid "Ninja Forms - Processing"
@@ -4415,7 +4473,7 @@ msgstr "Behandlas"
 
 #: lib/StepProcessing/menu.php:11
 msgid "Ninja Forms Processing"
-msgstr "Ninja Forms bearbetar"
+msgstr "Ninja Forms behandlar"
 
 #: includes/Admin/Menus/Forms.php:354
 msgid "Edit Form"
