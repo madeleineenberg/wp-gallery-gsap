@@ -22,7 +22,8 @@ class TextBlock extends Composer
            'heading' => get_field('heading'),
            'text' => get_field('text'),
            'icon' => get_field('icon'),
-           'image' => get_field('image')
+           'image' => get_field('image'),
+           'opacity' => get_field('image_opacity') ? get_field('image_opacity') : '1',
         ];
     }
 

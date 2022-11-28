@@ -26,10 +26,12 @@
     opacity: 0;
     transition: opacity 0.9s ease;
     margin-top: 10%;
+    
 
     &.is-inview {
       opacity: 1;
       transform: translateY(0px);
+      
       ion-icon {
         animation: mymove 1s ease-in-out infinite;
       }
@@ -37,6 +39,7 @@
 
     p {
       position: relative;
+      
     }
 
     @include bootstrap.media-breakpoint-down(lg) {
@@ -72,8 +75,8 @@
     top: 50%;
     z-index: -1;
     aspect-ratio: 4 / 3;
-    opacity: 0.8;
     overflow: hidden;
+    background-color: map-get(abstracts.$theme-colors, 'blackish' );
 
     img {
       height: 100%;

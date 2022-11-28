@@ -24,7 +24,7 @@
     </div>
     @if ($image)
         <div class="c-text-block__image-wrapper">
-            <img data-scroll data-scroll-speed="-2" class="c-text-block__image"src="{{ $image['sizes']['large'] }}"
+            <img data-scroll data-scroll-speed="-2" class="c-text-block__image" style="opacity: {{$opacity}}" src="{{ $image['sizes']['large'] }}"
                 alt="">
         </div>
     @endif
