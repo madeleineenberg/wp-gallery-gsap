@@ -29,9 +29,8 @@
       margin-top: 20%;
     }
 
-    img {
+    img, video {
       object-fit: cover;
-      opacity: 0.8;
       height: 100%;
       width: 100%;
       clip-path: inset(100% 0% 0% 0%);
