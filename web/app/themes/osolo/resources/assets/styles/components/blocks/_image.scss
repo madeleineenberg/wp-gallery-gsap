@@ -15,6 +15,10 @@
       &.right {
         padding-left: 5%;
       }
+
+      &.center {
+        padding: 0 5%;
+      }
     }
 
     @include bootstrap.media-breakpoint-down(md) {

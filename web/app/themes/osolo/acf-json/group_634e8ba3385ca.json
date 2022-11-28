@@ -18,7 +18,8 @@
             },
             "choices": {
                 "left": "Left",
-                "right": "Right"
+                "right": "Right",
+                "center": "Center"
             },
             "default_value": [],
             "return_format": "value",
@@ -126,5 +127,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1669638700
+    "modified": 1669645010
 }

@@ -12,7 +12,7 @@
   SupportsMultiple: false
 / --}}
 
-<div class="c-image-video-block {{ $placement[0] ? $placement[0] : '' }} {{ $placement[1] ? $placement[1] : ''  }}">
+<div class="c-image-video-block {{ $placement[0] ? $placement[0] : '' }}">
     @if ($image)
         <div class="c-image-video-block__image-wrapper" data-scroll data-scroll-speed="-2">
             <img src="{{ $image['sizes']['large'] }}" style="opacity: {{$opacity}}" />
