@@ -12,14 +12,18 @@
   SupportsMultiple: false
 / --}}
 
-<div class="c-image-video-block">
+<div class="c-image-video-block {{ $placement[0] ? $placement[0] : '' }} {{ $placement[1] ? $placement[1] : ''  }}">
     @if ($image)
-        <img data-scroll data-scroll-speed="-2" src="{{ $image['sizes']['large'] }}" />
+        <div class="c-image-video-block__image-wrapper" data-scroll data-scroll-speed="-2">
+            <img src="{{ $image['sizes']['large'] }}" style="opacity: {{$opacity}}" />
+        </div>
     @endif
     @if ($video)
-        <video autoplay loop muted playsinline>
-            <source src="{{ $video['url'] }}" type="video/mp4">
-            <source src="{{ $video['url'] }}" type="video/webm">
-        </video>
+        <div class="c-image-video-block__image-wrapper">
+            <video autoplay loop muted playsinline style="opacity: {{$opacity}}">
+                <source src="{{ $video['url'] }}" type="video/mp4">
+                <source src="{{ $video['url'] }}" type="video/webm">
+            </video>
+        </div>
     @endif
 </div>
