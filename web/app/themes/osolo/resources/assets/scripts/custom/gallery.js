@@ -32,6 +32,7 @@ export default function () {
       });
     }, 100);
 
+  
     function setImages(images) {
       $images = images;
       detectScroll();
