@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Ninja Forms Contact Form &#8211; The Drag and Drop Form Builder for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-09-27 06:02:04+0000\n"
+"PO-Revision-Date: 2023-01-30 08:16:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Ninja Forms Contact Form &#8211; The Drag and Drop Form Builder for WordPress - Stable (latest release)\n"
 
@@ -263,7 +263,7 @@ msgstr "Inga resultat hittades."
 
 #: includes/Templates/admin-menu-system-status.html.php:25
 msgid "For your security, do not post this information in public places, such as the WordPress.org support forums."
-msgstr "För din säkerhet ska du inte publicera den här informationen på offentliga platser, som till exempel supportforumen på WordPress.org."
+msgstr "För din säkerhet ska du inte publicera denna information på offentliga platser, som till exempel supportforumen på WordPress.org."
 
 #: includes/Templates/admin-menu-system-status.html.php:21
 msgid "This information is vital for addressing your issue in a timely manner."
@@ -280,6 +280,10 @@ msgstr "Låt användare ladda upp filer till din webbplats! Begränsa filtyp och
 #: includes/Templates/admin-menu-new-form.html.php:41
 msgid "Create multiple page forms with drag-and-drop. You don't need to code to build complex forms!"
 msgstr "Skapa formulär på flera sidor med dra och släpp. Du behöver inte koda för att skapa komplexa formulär!"
+
+#: includes/Templates/admin-menu-new-form.html.php:33
+msgid "Show & hide fields and pages, selectively send email, & much more! Build professional forms easily."
+msgstr "Visa och dölj fält och sidor, skicka e-post selektivt och mycket mer! Bygg professionella formulär enkelt."
 
 #: includes/Templates/admin-menu-dashboard.html.php:245
 msgid "Additional Templates"
@@ -572,7 +576,7 @@ msgstr "Uppdatera åtgärdstabeller"
 
 #: includes/Config/PluginSettingsAdvanced.php:134
 msgid "Click this button if any of your forms are still in 'Maintenance Mode' after performing any required updates."
-msgstr "Klicka på den här knappen om något av dina formulär fortfarande är i ”underhållsläge” efter att ha utfört nödvändiga uppdateringar."
+msgstr "Klicka på denna knapp om något av dina formulär fortfarande är i ”underhållsläge” efter att ha utfört nödvändiga uppdateringar."
 
 #: includes/Config/PluginSettingsAdvanced.php:132
 #: includes/Config/PluginSettingsAdvanced.php:133
@@ -697,6 +701,10 @@ msgstr "Anonymisera data"
 msgid "Remove ALL Ninja Forms data and uninstall?"
 msgstr "Ta bort alla Ninja Forms-data och avinstallera?"
 
+#: ninja-forms.php:593
+msgid "If you are using Ninja Forms to collect personal information, you should consult a legal professional for your use case."
+msgstr "Om du använder Ninja Forms för att samla in personlig information bör du kontakta en jurist för ditt användningsfall."
+
 #: ninja-forms.php:592
 msgid "Ninja Forms allows you to collect personal information"
 msgstr "Ninja Forms låter dig samla in personlig information"
@@ -751,7 +759,7 @@ msgstr "Spara alla"
 
 #: includes/Config/ActionExportDataRequestSettings.php:11
 msgid "This action adds users to WordPress' personal data export tool, allowing admins to comply with the GDPR and other privacy regulations from the site's front end."
-msgstr "Den här åtgärden lägger till användare till WordPress verktyg för export av personuppgifter, vilket gör att administratörer kan följa GDPR och andra integritetsbestämmelser."
+msgstr "Denna åtgärd lägger till användare till WordPress verktyg för export av personuppgifter, vilket gör att administratörer kan följa GDPR och andra integritetsbestämmelser."
 
 #: includes/Config/ActionDeleteDataRequestSettings.php:11
 msgid "This action adds users to WordPress' personal data delete tool, allowing admins to comply with the GDPR and other privacy regulations from the site's front end."
@@ -1258,7 +1266,7 @@ msgstr "Kopiera systemrapport"
 
 #: includes/Templates/admin-menu-system-status.html.php:19
 msgid "Include this information in your support request by pasting in the \"System Status\" portion of the form. (right click, choose \"Paste\" or use Ctrl+V)"
-msgstr "Inkludera den här informationen i din supportförfrågan genom att klistra in den i ”Systemstatus”-delen av formuläret. (Högerklicka och välj ”Klistra in” eller använd Ctrl+V)."
+msgstr "Inkludera denna information i din supportförfrågan genom att klistra in den i ”Systemstatus”-delen av formuläret. (Högerklicka och välj ”Klistra in” eller använd Ctrl+V)."
 
 #: includes/Templates/admin-menu-system-status.html.php:18
 msgid "Click \"Submit a Support Request\" to be directed to our site."
@@ -1512,6 +1520,10 @@ msgstr "Etikett, värde, beräknat värde"
 #: includes/Templates/admin-menu-new-form.html.php:532
 msgid "Please use the following format"
 msgstr "Använd följande format"
+
+#: includes/Actions/Email.php:183
+msgid "Your email action \"%s\" has an invalid value for the \"%s\" setting. Please check this setting and try again."
+msgstr "Din e-poståtgärd ”%s” har ett ogiltigt värde för inställningen ”%s”. Kontrollera denna inställning och försök igen."
 
 #: includes/Admin/AllFormsTable.php:40
 msgid "Really Delete This Form? This will remove all fields and submission data. Recovery is not possible."
@@ -2893,9 +2905,17 @@ msgstr "Beräkningar"
 msgid "Display Settings"
 msgstr "Visningsinställningar"
 
+#: includes/Config/FormRestrictionSettings.php:108
+msgid "Does NOT apply to form preview."
+msgstr "Gäller INTE för förhandsgranskning av formulär."
+
 #: includes/Config/FormRestrictionSettings.php:104
 msgid "Submission Limit"
 msgstr "Inlämningsgräns"
+
+#: includes/Config/FormRestrictionSettings.php:71
+msgid "Does apply to form preview."
+msgstr "Gäller för förhandsgranskning av formulär."
 
 #: includes/Config/FormRestrictionSettings.php:55
 msgid "Logged In"
@@ -2948,6 +2968,10 @@ msgstr "Vanliga fält"
 #: includes/Config/FieldSettings.php:1311
 msgid "Used for marking a field for processing."
 msgstr "Används för att markera ett fält för bearbetning."
+
+#: includes/Config/FieldSettings.php:1307
+msgid "This is a user's state."
+msgstr "Det här är en användares tillstånd."
 
 #: includes/Config/FieldSettings.php:1259
 msgid "A case sensitive answer to help prevent spam submissions of your form."
@@ -3242,7 +3266,7 @@ msgstr "Metabox"
 
 #: includes/Abstracts/FieldOptIn.php:51
 msgid "refresh"
-msgstr "Uppdatera"
+msgstr "uppdatera"
 
 #: includes/Abstracts/FieldOptIn.php:51
 msgid "Lists"
@@ -3268,6 +3292,10 @@ msgstr "Ett oväntat fel uppstod."
 #: includes/MergeTags/Fields.php:14
 msgid "Fields"
 msgstr "Fält"
+
+#. Description of the plugin
+msgid "Ninja Forms is a webform builder with unparalleled ease of use and features."
+msgstr "Ninja Forms är en webbformulärbyggare med oöverträffad användarvänlighet och funktioner."
 
 #. Plugin Name of the plugin
 #: includes/Admin/Menus/Forms.php:59 includes/Config/i18nBuilder.php:5

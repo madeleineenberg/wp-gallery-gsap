@@ -65,11 +65,11 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/advanced-custom-fields-pro",
-        "version": "6.0.5",
+        "version": "6.2.1.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://www.advancedcustomfields.com"
+          "url": "https://www.advancedcustomfields.com/"
         },
         "require": {
           "junaidbhura/composer-wp-pro-plugins": "*"
@@ -107,7 +107,7 @@
     "wpackagist-plugin/webp-express": "^0.25.1",
     "wpackagist-plugin/regenerate-thumbnails": "^3.1",
     "junaidbhura/composer-wp-pro-plugins": "^1.2",
-    "junaidbhura/advanced-custom-fields-pro": "^6.0.5",
+    "junaidbhura/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/ninja-forms": "^3.6",
     "custom/wpml-ninja-forms-addon": "^0.1.2",
     "wpackagist-plugin/wp-super-cache": "^1.9",
