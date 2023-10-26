@@ -24,31 +24,31 @@ export default function () {
                 );
               }
             });
-            ghostEyes();
+            // ghostEyes();
           }
         },
       });
     }, 100);
   }
 
-  function ghostEyes() {
-    $(document).on('mousemove', function (event) {
-      let eye = $('.eye');
+  // function ghostEyes() {
+  //   $(document).on('mousemove', function (event) {
+  //     let eye = $('.eye');
 
-      if (eye.length > 0) {
-        let x = eye.offset().left + eye.width() / 2;
-        let y = eye.offset().top + eye.height() / 2;
-        let rad = Math.atan2(event.pageX - x, event.pageY - y);
-        let rot = rad * (180 / Math.PI) * -4 + 180;
-        eye.css({
-          '-webkit-transform': 'rotate(' + rot + 'deg)',
-          '-moz-transform': 'rotate(' + rot + 'deg)',
-          '-ms-transform': 'rotate(' + rot + 'deg)',
-          transform: 'rotate(' + rot + 'deg)',
-        });
-      }
-    });
-  }
+  //     if (eye.length > 0) {
+  //       let x = eye.offset().left + eye.width() / 2;
+  //       let y = eye.offset().top + eye.height() / 2;
+  //       let rad = Math.atan2(event.pageX - x, event.pageY - y);
+  //       let rot = rad * (180 / Math.PI) * -4 + 180;
+  //       eye.css({
+  //         '-webkit-transform': 'rotate(' + rot + 'deg)',
+  //         '-moz-transform': 'rotate(' + rot + 'deg)',
+  //         '-ms-transform': 'rotate(' + rot + 'deg)',
+  //         transform: 'rotate(' + rot + 'deg)',
+  //       });
+  //     }
+  //   });
+  // }
   //Setup our on formSumbit Listener.
   $(document).on('nfFormSubmitResponse', function () {
     $('.c-note-board__grid-item').remove();

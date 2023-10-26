@@ -24,7 +24,6 @@
 .link > div:nth-child(2) span {
   transition: 0.5s;
   will-change: transform;
-  transition: 0.5s;
   transform-origin: top;
   // transition-delay: calc(0.05s * var(--index));
   display: inline-block;

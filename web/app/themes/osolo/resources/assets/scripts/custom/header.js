@@ -3,12 +3,12 @@ import gsap from 'gsap';
 export default function () {
   const tl1 = gsap.timeline();
 
-  tl1.from('.logo , .menu-open , .footer-links', {
+  tl1.from('.logo , .menu-open, .footer', {
     duration: 1,
     y: -100,
     opacity: 0,
     stagger: {
-      amount: 0.4,
+      amount: 0.5,
     },
   });
 

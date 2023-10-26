@@ -30,9 +30,19 @@ export default function () {
 
     //update scroll when images are loaded
 
-    imagesLoaded(scrollContainer, { background: '.item' }, function () {
-      scroll.update();
-    });
+    // imagesLoaded(scrollContainer, { background: '.item' }, function () {
+    //   scroll.update();
+    // });
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   function ScrollUpdateDelay() {
+    //     setTimeout(function () {
+    //       scroll.update();
+    //     }, 500);
+    //   }
+
+    //   ScrollUpdateDelay();
+    // });
 
     //update locomotive scroll if height is changed
 

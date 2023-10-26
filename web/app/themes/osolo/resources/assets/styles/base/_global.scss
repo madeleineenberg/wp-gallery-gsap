@@ -53,6 +53,19 @@ a {
   }
 }
 
+p {
+  font-family: abstracts.$lekton-regular;
+  font-size: 24px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-family: abstracts.$lekton-regular;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+
 //custom cursor styling
 
 @include bootstrap.media-breakpoint-up(md) {
