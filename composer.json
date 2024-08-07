@@ -62,19 +62,8 @@
       }
     },
     {
-      "type": "package",
-      "package": {
-        "name": "junaidbhura/advanced-custom-fields-pro",
-        "version": "6.2.1.1",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://www.advancedcustomfields.com/"
-        },
-        "require": {
-          "junaidbhura/composer-wp-pro-plugins": "*"
-        }
-      }
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
     },
     {
       "type": "package",
@@ -102,17 +91,17 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "custom/wp-sync-db-media-files": "dev-master",
-    "wpackagist-plugin/safe-svg": "^1.9",
+    "wpackagist-plugin/safe-svg": "2.2.5",
     "wpackagist-plugin/disable-comments": "^2.2",
     "wpackagist-plugin/webp-express": "^0.25.1",
     "wpackagist-plugin/regenerate-thumbnails": "^3.1",
     "junaidbhura/composer-wp-pro-plugins": "^1.2",
-    "junaidbhura/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/ninja-forms": "^3.6",
     "custom/wpml-ninja-forms-addon": "^0.1.2",
     "wpackagist-plugin/wp-super-cache": "^1.9",
-    "wpackagist-plugin/wp-mail-smtp": "^3.2",
-    "wpackagist-plugin/password-protected": "^2.5"
+    "wpackagist-plugin/wp-mail-smtp": "4.1.0",
+    "wpackagist-plugin/password-protected": "^2.5",
+    "wpengine/advanced-custom-fields-pro": "^6.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.6",
@@ -132,15 +121,7 @@
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": [
-        "type:wordpress-muplugin",
-        "wpackagist-plugin/wp-mail-smtp",
-        "custom/wp-sync-db-media-files",
-        "wpackagist-plugin/webp-express",
-        "wpackagist-plugin/safe-svg",
-        "wpackagist-plugin/redirection",
-        "wpackagist-plugin/disable-comments",
-        "wpackagist-plugin/regenerate-thumbnails",
-        "junaidbhura/advanced-custom-fields-pro"
+        "type:wordpress-muplugin"
       ],
       "web/app/plugins/{$name}/": [
         "type:wordpress-plugin"
