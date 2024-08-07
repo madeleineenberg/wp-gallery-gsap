@@ -2,52 +2,52 @@
 # This file is distributed under the same license as the Plugins - Regenerate Thumbnails - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-10 15:36:47+0000\n"
+"PO-Revision-Date: 2022-09-25 09:26:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Regenerate Thumbnails - Stable (latest release)\n"
 
 #. translators: Used for listing old sizes of currently registered thumbnails
-#: includes/class-regeneratethumbnails-regenerator.php:686
+#: includes/class-regeneratethumbnails-regenerator.php:696
 msgid "%s (old)"
 msgstr "%s (gammal)"
 
-#: includes/class-regeneratethumbnails-regenerator.php:612
+#: includes/class-regeneratethumbnails-regenerator.php:622
 msgid "Attachment %d"
 msgstr "Bilaga %d"
 
-#: includes/class-regeneratethumbnails-regenerator.php:574
+#: includes/class-regeneratethumbnails-regenerator.php:584
 msgid "Unable to load the metadata for this attachment."
 msgstr "Kunde inte ladda metadata för denna bilaga."
 
-#: includes/class-regeneratethumbnails-regenerator.php:558
+#: includes/class-regeneratethumbnails-regenerator.php:568
 msgid "The current image editor cannot process this file type."
 msgstr "Den nuvarande bildredigeraren kan inte bearbeta denna filtyp."
 
 #. translators: The relative upload path to the attachment.
-#: includes/class-regeneratethumbnails-regenerator.php:141
+#: includes/class-regeneratethumbnails-regenerator.php:150
 msgid "The fullsize image file cannot be found in your uploads directory at <code>%s</code>. Without it, new thumbnail images can't be generated."
 msgstr "Bilden med full storlek kan inte hittas i din uppladdningskatalog i <code>%s</code>. Utan den kan inte nya miniatyrbilder skapas."
 
-#: includes/class-regeneratethumbnails-regenerator.php:84
+#: includes/class-regeneratethumbnails-regenerator.php:93
 msgid "This attachment is a site icon and therefore the thumbnails shouldn't be touched."
 msgstr "Denna bilaga är en webbplatsikon och därför ska inte miniatyrerna röras."
 
-#: includes/class-regeneratethumbnails-regenerator.php:73
+#: includes/class-regeneratethumbnails-regenerator.php:82
 msgid "This item is not an attachment."
 msgstr "Detta objekt är inte en bilaga."
 
-#: includes/class-regeneratethumbnails-regenerator.php:62
+#: includes/class-regeneratethumbnails-regenerator.php:71
 msgid "No attachment exists with that ID."
-msgstr "Inga bilagor med det ID:t finns."
+msgstr "Det finns ingen bilaga med det ID:t."
 
 #: includes/class-regeneratethumbnails-rest-controller.php:262
 msgid "The page number requested is larger than the number of pages available."
-msgstr "Sidnumret som begärdes är större än antal sidor tillgängliga."
+msgstr "Det begärda sidnumret är högre än antalet tillgängliga sidor."
 
 #: includes/class-regeneratethumbnails-rest-controller.php:64
 msgid "Posts to process per loop. This is to control memory usage and you likely don't need to adjust this."
@@ -59,7 +59,7 @@ msgstr "Specifika inläggs-ID:n att uppdatera istället för alla inlägg som an
 
 #: includes/class-regeneratethumbnails-rest-controller.php:52
 msgid "The types of posts to update. Defaults to all public post types."
-msgstr "Inläggstyperna som ska uppdateras. Standard är alla publika inläggstyper."
+msgstr "Inläggstyperna som ska uppdateras. Standard är alla offentliga inläggstyper."
 
 #: includes/class-regeneratethumbnails-rest-controller.php:47
 msgid "Whether to update the image tags in any posts that make use of this attachment."
@@ -85,15 +85,15 @@ msgstr "Återskapa miniatyrerna för denna bild"
 
 #: regenerate-thumbnails.php:360
 msgid "This tool won't be able to do anything because your server doesn't support image editing which means that WordPress can't create thumbnail images. Please ask your host to install the Imagick or GD PHP extensions."
-msgstr "Det här verktyget kan inte göra något eftersom din server inte tillåter bildredigering, vilket betyder att WordPress inte kan skapa miniatyrbilder. Vänligen be ditt webbhotell att installera PHP-tillägget Imagick eller GD."
+msgstr "Detta verktyg kan inte göra något eftersom din server inte stöder bildredigering, vilket betyder att WordPress inte kan skapa miniatyrbilder. Be ditt webbhotell att installera PHP-utökningarna Imagick eller GD."
 
 #: regenerate-thumbnails.php:331
 msgid "This tool requires that JavaScript be enabled to work."
-msgstr "Det här verktyget kräver att JavaScript är aktiverat för att det ska fungera."
+msgstr "För att detta verktyg ska fungera behöver JavaScript vara aktiverat."
 
 #: regenerate-thumbnails.php:321
 msgid "This plugin requires WordPress 4.7 or newer. You are on version %1$s. Please <a href=\"%2$s\">upgrade</a>."
-msgstr "Detta tillägg kräver WordPress 4.7 eller nyare. Du använder version %1$s. Vänligen <a href=\"%2$s\">uppgradera</a>."
+msgstr "Detta tillägg kräver WordPress 4.7 eller nyare. Du använder version %1$s. <a href=\"%2$s\">Uppgradera</a>."
 
 #: regenerate-thumbnails.php:294
 msgid "Regenerate Thumbnails For The %d Selected Attachments"
@@ -133,7 +133,7 @@ msgstr "Återskapade {name}"
 
 #: regenerate-thumbnails.php:274
 msgid "Resume"
-msgstr "Fortsätt"
+msgstr "Återstarta"
 
 #: regenerate-thumbnails.php:273
 msgid "Pause"
@@ -169,7 +169,7 @@ msgstr "Färdigt! Klicka här för att gå tillbaka."
 
 #: regenerate-thumbnails.php:263
 msgid "Regenerating…"
-msgstr "Återskapar&hellip;"
+msgstr "Återskapar …"
 
 #: regenerate-thumbnails.php:262
 msgid "Update the content of posts that use this attachment to use the new sizes."
@@ -241,12 +241,12 @@ msgstr "Uppdatera innehållet i inlägg att använda dessa nya storlekar."
 #. translators: %s: Media library URL
 #: regenerate-thumbnails.php:241
 msgid "To process a specific image, visit your media library and click the &quot;Regenerate Thumbnails&quot; link or button. To process multiple specific images, make sure you're in the <a href=\"%s\">list view</a> and then use the Bulk Actions dropdown after selecting one or more images."
-msgstr "För att bearbeta en specifik bild, besök ditt mediebibliotek och klicka på länken eller knappen ”Återskapa miniatyrer”. För att bearbeta flera specifika bilder, se till att du är i <a href=\"%s\">listvyn</a> och använd sedan rullgardinsmenyn för massåtgärder efter att du har valt en eller fler bilder."
+msgstr "För att bearbeta en specifik bild, besök ditt mediabibliotek och klicka på länken eller knappen ”Återskapa miniatyrer”. För att bearbeta flera specifika bilder, se till att du är i <a href=\"%s\">listvyn</a> och använd sedan rullgardinsmenyn för massåtgärder efter att du har markerat en eller fler bilder."
 
 #. translators: %s: Media options URL
 #: regenerate-thumbnails.php:236
 msgid "When you change WordPress themes or change the sizes of your thumbnails at <a href=\"%s\">Settings → Media</a>, images that you have previously uploaded to you media library will be missing thumbnail files for those new image sizes. This tool will allow you to create those missing thumbnail files for all images."
-msgstr "När du ändrar WordPress-tema eller ändrar storleken på dina miniatyrer i <a href=\"%s\">Inställningar &rarr; Media</a>, så kommer bilder som du har laddat upp till ditt mediebibliotek förut att sakna miniatyrfiler för dessa nya storlekar. Detta verktyg låter dig skapa dessa miniatyrfiler för alla bilder som saknas."
+msgstr "När du ändrar WordPress-tema eller ändrar storleken på dina miniatyrer i <a href=\"%s\">Inställningar &rarr; Media</a> kommer bilder du tidigare har laddat upp till ditt mediabibliotek att sakna miniatyrfiler för dessa nya storlekar. Detta verktyg låter dig skapa dessa saknade miniatyrfiler för alla bilder."
 
 #: regenerate-thumbnails.php:231
 msgid "proportionally resized to fit inside dimensions"
@@ -274,15 +274,15 @@ msgstr "<strong>{label}:</strong> {width}×{height} pixlar ({cropMethod})"
 
 #: regenerate-thumbnails.php:225
 msgid "Delete thumbnail files for old unregistered sizes in order to free up server space. This may result in broken images in your posts and pages."
-msgstr "Ta bort miniatyrer för äldre, oregistrerade storlekar för att frigöra utrymme på servern. Detta kan leda till att vissa bilder kommer att saknas på olika sidor och i olika inlägg."
+msgstr "Ta bort miniatyrer för äldre, oregistrerade storlekar för att frigöra utrymme på servern. Detta kan leda till att vissa bilder kommer att saknas på dina inlägg och sidor."
 
 #: regenerate-thumbnails.php:224
 msgid "Skip regenerating existing correctly sized thumbnails (faster)."
-msgstr "Hoppa över återskapning av befintliga miniatyrer med rätt storlek (snabbare)."
+msgstr "Återskapa inte befintliga miniatyrer som redan har rätt storlek (snabbare)."
 
 #: regenerate-thumbnails.php:223 regenerate-thumbnails.php:334
 msgid "Loading…"
-msgstr "Laddar&hellip;"
+msgstr "Laddar in …"
 
 #: regenerate-thumbnails.php:166
 msgctxt "admin menu entry title"
