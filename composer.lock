@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6447ef493f93f4f919fb893ce809fd89",
+    "content-hash": "344d7faf716d22b1dc65425f50beb9fe",
     "packages": [
         {
             "name": "composer/installers",
@@ -239,20 +239,23 @@
             "time": "2024-07-12T11:35:52+00:00"
         },
         {
-            "name": "custom/wp-sync-db-media-files",
-            "version": "dev-master",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
             "name": "custom/wpml-ninja-forms-addon",
             "version": "0.1.2",
             "dist": {
                 "type": "zip",
                 "url": "https://wpml.org/?download=5342487&user_id=73996&subscription_key=$P$BEJLlggx89UqfJzMkhXTFoyrwklwp&t=1624351150&version=0.1.2"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-migrate-db-pro",
+            "version": "2.6.13",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro&version=2.6.13"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin"
         },
@@ -2017,7 +2020,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "custom/wp-sync-db-media-files": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,

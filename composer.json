@@ -66,6 +66,10 @@
       "url": "https://connect.advancedcustomfields.com"
     },
     {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com"
+    },
+    {
       "type": "package",
       "package": {
         "name": "junaidbhura/wpai-acf-add-on",
@@ -90,7 +94,6 @@
     "roots/wordpress": "^6",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "custom/wp-sync-db-media-files": "dev-master",
     "wpackagist-plugin/safe-svg": "2.2.5",
     "wpackagist-plugin/disable-comments": "^2.2",
     "wpackagist-plugin/webp-express": "^0.25.1",
@@ -101,7 +104,8 @@
     "wpackagist-plugin/wp-super-cache": "^1.9",
     "wpackagist-plugin/wp-mail-smtp": "4.1.0",
     "wpackagist-plugin/password-protected": "^2.5",
-    "wpengine/advanced-custom-fields-pro": "^6.3"
+    "wpengine/advanced-custom-fields-pro": "^6.3",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "^2.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.6",
